@@ -15,3 +15,21 @@
 
 
 # INICIO DE PROGRAMA
+
+numero = -1  # Inicializamos con un valor diferente de 0 para entrar al bucle
+cantidad_numeros = 0
+suma_total = 0  
+
+while numero != 0:
+    numero = input("Ingrese un numero entero (0 para finalizar): ")
+    try:
+        numero = int(numero)  # Convertimos la entrada a entero
+        if numero != 0:  # Solo acumulamos si el numero no es 0
+            cantidad_numeros += 1
+            suma_total += numero
+    except ValueError:  
+        print("Por favor, ingrese un numero entero valido.")
+
+# Mostramos los resultados
+print(f"Cantidad de numeros ingresados: {cantidad_numeros}")
+print(f"Suma total: {suma_total}")

@@ -18,3 +18,16 @@
 
 
 # INICIO DE PROGRAMA
+
+# Alternativa usando comprensión de listas
+# productos = [producto for producto in (input(f"Ingrese el nombre del producto {i + 1}: ") for i in range(5))]   
+
+productos = []  # Lista para almacenar los nombres de los productos
+
+for i in range(5):
+    producto = input(f"Ingrese el nombre del producto {i + 1}: ")
+    productos.append(producto)  # Agregamos el producto a la lista
+
+# Mostramos la lista numerada
+for i, producto in enumerate(productos, start=1):
+    print(f"{i}. {producto}")  # Resultado: 1. Arroz, 2. Fideos, ..., 5. Azucar

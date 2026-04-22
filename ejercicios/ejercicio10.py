@@ -19,3 +19,15 @@
 
 
 # INICIO DE PROGRAMA
+
+frase = input("Ingrese una palabra o frase corta: ")  # Solicitamos al usuario que ingrese una frase
+
+print(f"Texto original: {frase}")  # Mostramos el texto original
+print(f"Mayusculas: {frase.upper()}")  # Mostramos el texto en mayusculas
+print(f"Minusculas: {frase.lower()}")  # Mostramos el texto en minusculas
+print(f"Cantidad de caracteres: {len(frase)}")  # Mostramos la cantidad de caracteres usando len()
+
+cantidad_letras = 0
+for caracter in frase:
+    cantidad_letras += 1
+print(f"Cantidad de caracteres: {cantidad_letras}")  # Mostramos la cantidad de caracteres usando el contador manual
