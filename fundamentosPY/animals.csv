@@ -1,0 +1,1001 @@
+id,name,cientific_name,location,gender,count
+1,North American river otter,Lutra canadensis,Germany,Female,8
+2,"Cardinal, black-throated",Paroaria gularis,Japan,Male,52
+3,Golden jackal,Canis aureus,Philippines,Female,44
+4,Native cat,Dasyurus viverrinus,China,Male,98
+5,"Turkey, common",Meleagris gallopavo,Tunisia,Female,60
+6,"Raccoon, common",Procyon lotor,Russia,Female,95
+7,Green-winged macaw,Ara chloroptera,Poland,Female,20
+8,Chuckwalla,Sauromalus obesus,China,Female,75
+9,Buttermilk snake,Coluber constrictor,Russia,Genderfluid,92
+10,"Rhea, greater",Rhea americana,Greece,Agender,31
+11,"Monitor, water",Varanus salvator,Ecuador,Female,93
+12,Buttermilk snake,Coluber constrictor,Indonesia,Male,5
+13,Grey lourie,Lorythaixoides concolor,China,Agender,72
+14,Common zorro,Dusicyon thous,Ukraine,Female,45
+15,"Goat, mountain",Oreamnos americanus,Philippines,Female,32
+16,Palm squirrel,Funambulus pennati,China,Male,81
+17,Red-billed buffalo weaver,Bubalornis niger,Azerbaijan,Female,45
+18,Fat-tailed dunnart,Smithopsis crassicaudata,Mexico,Male,8
+19,Gelada baboon,Theropithecus gelada,Portugal,Male,31
+20,Crowned hawk-eagle,Spizaetus coronatus,Venezuela,Female,41
+21,California sea lion,Zalophus californicus,Philippines,Male,25
+22,"Owl, great horned",Bubo virginianus,Brazil,Male,53
+23,Asiatic jackal,Canis aureus,Brazil,Male,90
+24,Long-necked turtle,Chelodina longicollis,Israel,Male,17
+25,"Lemur, grey mouse",Microcebus murinus,China,Male,62
+26,Violet-crested turaco,Tauraco porphyrelophus,Russia,Female,61
+27,"Cat, african wild",Felis silvestris lybica,Israel,Polygender,62
+28,"Lion, california sea",Zalophus californicus,China,Male,82
+29,Frilled dragon,Chlamydosaurus kingii,Afghanistan,Female,79
+30,Common langur,Semnopithecus entellus,Japan,Male,5
+31,"Skink, blue-tongued",Tiliqua scincoides,Indonesia,Male,55
+32,"Bulbul, black-eyed",Pycnonotus barbatus,Saudi Arabia,Male,88
+33,Horned lark,Eremophila alpestris,Russia,Genderfluid,38
+34,"Duck, white-faced whistling",Dendrocygna viduata,Saudi Arabia,Female,99
+35,Indian leopard,Panthera pardus,Indonesia,Female,80
+36,Brindled gnu,Connochaetus taurinus,Indonesia,Bigender,22
+37,Black vulture,Aegypius tracheliotus,Russia,Bigender,66
+38,Pied avocet,Recurvirostra avosetta,China,Female,81
+39,"Cockatoo, slender-billed",Cacatua tenuirostris,Croatia,Male,4
+40,"Possum, ring-tailed",Pseudocheirus peregrinus,South Africa,Male,38
+41,"Fox, bat-eared",Otocyon megalotis,China,Male,68
+42,"Jacana, african",Actophilornis africanus,Russia,Male,45
+43,Red-tailed phascogale,Phascogale calura,China,Female,18
+44,Roseate cockatoo,Eolophus roseicapillus,Colombia,Female,65
+45,Elegant crested tinamou,Eudromia elegans,Thailand,Female,48
+46,Rufous tree pie,Dendrocitta vagabunda,China,Female,46
+47,Green-winged macaw,Ara chloroptera,Philippines,Male,84
+48,Northern phalarope,Phalaropus lobatus,Poland,Male,63
+49,Purple moorhen,Porphyrio porphyrio,China,Male,34
+50,"Pelican, eastern white",Pelecans onocratalus,Czech Republic,Female,25
+51,Indian mynah,Acridotheres tristis,Philippines,Male,4
+52,"Elephant, african",Loxodonta africana,United States,Female,87
+53,"Eagle, tawny",Anitibyx armatus,China,Female,4
+54,Bush dog,Speothos vanaticus,Philippines,Male,23
+55,Suricate,Suricata suricatta,Sweden,Female,5
+56,Roe deer,Capreolus capreolus,Czech Republic,Female,20
+57,Coyote,Canis latrans,South Africa,Female,89
+58,"Tapir, brazilian",Tapirus terrestris,Mexico,Genderfluid,71
+59,Brazilian tapir,Tapirus terrestris,China,Male,98
+60,Kaffir cat,Felis silvestris lybica,Indonesia,Male,16
+61,Great white pelican,Pelecans onocratalus,Honduras,Male,57
+62,"Nuthatch, red-breasted",Sitta canadensis,China,Male,3
+63,"Vulture, white-headed",Aegypius occipitalis,Croatia,Female,75
+64,Stick insect,Leprocaulinus vipera,Georgia,Female,17
+65,Mandras tree shrew,Anathana ellioti,Poland,Polygender,11
+66,"Cat, civet",Bassariscus astutus,China,Male,52
+67,American marten,Martes americana,Russia,Female,6
+68,White-winged tern,Chlidonias leucopterus,Ireland,Female,41
+69,Dromedary camel,Camelus dromedarius,France,Agender,25
+70,"Stork, marabou",Leptoptilos crumeniferus,China,Male,54
+71,"Turaco, violet-crested",Tauraco porphyrelophus,Indonesia,Female,98
+72,"Heron, green-backed",Butorides striatus,Nepal,Male,10
+73,Chuckwalla,Sauromalus obesus,Macedonia,Agender,80
+74,Pronghorn,Antilocapra americana,Venezuela,Female,59
+75,Little grebe,Tachybaptus ruficollis,Argentina,Female,96
+76,African wild dog,Lycaon pictus,China,Female,49
+77,Great horned owl,Bubo virginianus,Russia,Male,5
+78,Worm snake (unidentified),Carphophis sp.,China,Female,82
+79,Western spotted skunk,Spilogale gracilis,Indonesia,Male,8
+80,"Civet, small-toothed palm",Arctogalidia trivirgata,Armenia,Female,51
+81,Sea birds (unidentified),unavailable,Indonesia,Male,56
+82,"Capuchin, weeper",Cebus nigrivittatus,Indonesia,Male,9
+83,"Hawk, ferruginous",Buteo regalis,Portugal,Male,40
+84,"Deer, swamp",Cervus duvauceli,Morocco,Male,44
+85,Marabou stork,Leptoptilos crumeniferus,Russia,Male,13
+86,"Peccary, collared",Tayassu tajacu,Japan,Male,93
+87,"Bandicoot, southern brown",Isoodon obesulus,Indonesia,Non-binary,59
+88,Turtle (unidentified),unavailable,Finland,Polygender,26
+89,"Snake, western patch-nosed",Salvadora hexalepis,Jamaica,Male,55
+90,Olive baboon,Papio cynocephalus,Paraguay,Female,6
+91,South African hedgehog,Erinaceus frontalis,Indonesia,Male,11
+92,Downy woodpecker,Picoides pubescens,Tunisia,Female,6
+93,"Lapwing, southern",Vanellus chilensis,United States,Male,51
+94,White spoonbill,Platalea leucordia,Sweden,Male,46
+95,African lynx,Felis caracal,Philippines,Agender,43
+96,Common eland,Taurotagus oryx,Peru,Female,87
+97,Black-capped capuchin,Cebus apella,China,Female,90
+98,Black kite,Milvus migrans,China,Female,1
+99,Bushpig,Potamochoerus porcus,Indonesia,Male,65
+100,Lesser mouse lemur,Microcebus murinus,Indonesia,Female,9
+101,"Grouse, greater sage",Centrocercus urophasianus,Russia,Genderfluid,57
+102,Brown antechinus,Antechinus flavipes,Nigeria,Female,2
+103,"Snake, eastern indigo",Drymarchon corias couperi,Nigeria,Female,6
+104,Blackbuck,Antilope cervicapra,China,Female,94
+105,Sportive lemur,Lepilemur rufescens,China,Male,42
+106,"Porcupine, tree",Coendou prehensilis,China,Genderfluid,70
+107,Pied kingfisher,Ceryle rudis,Switzerland,Male,9
+108,White-rumped vulture,Gyps bengalensis,China,Bigender,72
+109,"Spider, wolf",Lycosa godeffroyi,Ireland,Male,95
+110,Short-beaked echidna,Tachyglossus aculeatus,China,Male,90
+111,Savanna baboon,Papio cynocephalus,France,Female,70
+112,White-lipped peccary,Tayassu pecari,Indonesia,Male,66
+113,Marine iguana,Amblyrhynchus cristatus,Mexico,Female,95
+114,"Sloth, two-toed",Choloepus hoffmani,Sweden,Female,7
+115,"Tortoise, desert",Gopherus agassizii,Russia,Female,29
+116,"Dove, white-winged",Zenaida asiatica,Samoa,Male,22
+117,Little grebe,Tachybaptus ruficollis,China,Non-binary,32
+118,White-rumped vulture,Gyps bengalensis,Zimbabwe,Male,57
+119,Chestnut weaver,Ploceus rubiginosus,Indonesia,Male,12
+120,"Fox, blue",Alopex lagopus,China,Male,97
+121,Onager,Equus hemionus,Syria,Female,39
+122,Horned rattlesnake,Crotalus cerastes,Venezuela,Female,94
+123,"Dunnart, fat-tailed",Smithopsis crassicaudata,Nigeria,Male,68
+124,Wild boar,Sus scrofa,China,Male,58
+125,"Mynah, indian",Acridotheres tristis,Azerbaijan,Male,31
+126,Cobra (unidentified),Naja sp.,Indonesia,Female,81
+127,Magellanic penguin,Spheniscus magellanicus,Indonesia,Male,56
+128,Ring-necked pheasant,Phasianus colchicus,China,Agender,85
+129,African lion,Panthera leo,Indonesia,Female,75
+130,Black rhinoceros,Diceros bicornis,Azerbaijan,Female,31
+131,"Lemming, collared",Dicrostonyx groenlandicus,Bulgaria,Male,55
+132,European wild cat,Felis silvestris lybica,Japan,Male,57
+133,Whip-tailed wallaby,Macropus parryi,Peru,Male,13
+134,"Fox, bat-eared",Otocyon megalotis,Cuba,Female,1
+135,Laughing kookaburra,Dacelo novaeguineae,Portugal,Male,79
+136,Grant's gazelle,Gazella granti,Vietnam,Female,40
+137,Ring-tailed gecko,Cyrtodactylus louisiadensis,Tunisia,Female,87
+138,Swallow (unidentified),unavailable,Czech Republic,Female,19
+139,Silver-backed jackal,Canis mesomelas,France,Agender,78
+140,Banded mongoose,Mungos mungo,Thailand,Male,16
+141,Violet-crested turaco,Tauraco porphyrelophus,Portugal,Male,81
+142,"Hoopoe, eurasian",Upupa epops,Poland,Male,59
+143,White-cheeked pintail,Anas bahamensis,Philippines,Genderqueer,69
+144,Red-shouldered glossy starling,Lamprotornis nitens,Indonesia,Male,94
+145,Rose-ringed parakeet,Psittacula krameri,Indonesia,Male,2
+146,"Baboon, yellow",Papio cynocephalus,Poland,Female,60
+147,Burmese black mountain tortoise,Manouria emys,Morocco,Male,74
+148,White-headed vulture,Aegypius occipitalis,Russia,Female,73
+149,American bison,Bison bison,China,Female,48
+150,Leopard,Panthera pardus,Poland,Female,57
+151,"Owl, australian masked",Tyto novaehollandiae,Russia,Male,30
+152,Four-striped grass mouse,Rhabdomys pumilio,Brazil,Female,81
+153,"Starling, superb",Lamprotornis superbus,Chile,Female,16
+154,"Seal, common",Phoca vitulina,South Korea,Female,67
+155,"Jackal, black-backed",Canis mesomelas,Chad,Female,60
+156,Cuis,Microcavia australis,Indonesia,Female,93
+157,Crowned eagle,Spizaetus coronatus,Portugal,Genderqueer,49
+158,"Kangaroo, brush-tailed rat",Bettongia penicillata,Portugal,Agender,26
+159,"Crane, black-crowned",Balearica pavonina,Philippines,Male,68
+160,White-mantled colobus,Colobus guerza,China,Female,78
+161,"Monkey, bleeding heart",Theropithecus gelada,El Salvador,Male,53
+162,Asian red fox,Vulpes vulpes,China,Female,93
+163,"Dragon, asian water",Physignathus cocincinus,China,Male,16
+164,Eastern grey kangaroo,Macropus giganteus,China,Male,80
+165,Feral rock pigeon,Columba livia,Thailand,Male,95
+166,"Dog, african wild",Lycaon pictus,United States,Non-binary,26
+167,"Gull, southern black-backed",Larus dominicanus,Indonesia,Female,10
+168,Mountain lion,Felis concolor,Russia,Male,50
+169,Oribi,Ourebia ourebi,China,Female,68
+170,"Heron, yellow-crowned night",Nyctanassa violacea,New Zealand,Female,86
+171,"Shrike, crimson-breasted",Laniaurius atrococcineus,Zambia,Male,23
+172,Saddle-billed stork,Ephipplorhynchus senegalensis,China,Female,84
+173,"Deer, red",Cervus elaphus,China,Male,14
+174,Short-nosed bandicoot,Isoodon obesulus,Czech Republic,Non-binary,53
+175,Agile wallaby,Macropus agilis,Norway,Female,96
+176,Marabou stork,Leptoptilos crumeniferus,Poland,Female,38
+177,"Boar, wild",Sus scrofa,China,Female,18
+178,Asian elephant,Elephas maximus bengalensis,Poland,Female,20
+179,"Turtle, snake-necked",Chelodina longicollis,Brazil,Male,75
+180,Lapwing (unidentified),Vanellus sp.,Egypt,Female,24
+181,"Bear, grizzly",Ursus arctos,Nigeria,Male,20
+182,Bobcat,Felis rufus,China,Male,41
+183,Azara's zorro,Pseudalopex gymnocercus,Colombia,Female,74
+184,Egyptian viper,Naja haje,Mexico,Female,41
+185,Yellow mongoose,Cynictis penicillata,Thailand,Female,23
+186,Little heron,Butorides striatus,China,Female,90
+187,Jaguarundi,Felis yagouaroundi,Mexico,Female,9
+188,Musk ox,Ovibos moschatus,Poland,Male,19
+189,Topi,Damaliscus lunatus,Bulgaria,Male,97
+190,Rose-ringed parakeet,Psittacula krameri,Philippines,Male,21
+191,Peregrine falcon,Falco peregrinus,Iran,Female,72
+192,Steenbok,Raphicerus campestris,Peru,Female,53
+193,"Fox, arctic",Alopex lagopus,France,Female,8
+194,"Deer, savannah",Mazama gouazoubira,Indonesia,Female,76
+195,"Bird, black-throated butcher",Cracticus nigroagularis,Japan,Female,14
+196,"Cardinal, red-capped",Paroaria gularis,Poland,Female,9
+197,Mountain duck,Hymenolaimus malacorhynchus,Sweden,Male,30
+198,"Lion, steller's sea",Eumetopias jubatus,France,Female,43
+199,"Zorro, azara's",Pseudalopex gymnocercus,Canada,Male,97
+200,"Squirrel, antelope ground",Ammospermophilus nelsoni,Philippines,Female,3
+201,"Lion, galapagos sea",Zalophus californicus,Costa Rica,Male,86
+202,Turkey vulture,Cathartes aura,Brazil,Male,57
+203,"Sandpiper, spotted wood",Tringa glareola,Portugal,Male,26
+204,Sea birds (unidentified),unavailable,Russia,Female,67
+205,Western spotted skunk,Spilogale gracilis,Russia,Female,25
+206,Ringtail,Bassariscus astutus,Cameroon,Polygender,78
+207,"Turkey, australian brush",Alectura lathami,Japan,Male,21
+208,"Vulture, king",Sarcorhamphus papa,China,Female,72
+209,Osprey,Pandon haliaetus,Philippines,Male,96
+210,"Whale, baleen",Eubalaena australis,Indonesia,Male,96
+211,African red-eyed bulbul,Pycnonotus nigricans,Indonesia,Male,74
+212,"Gorilla, western lowland",Gorilla gorilla,United States,Female,19
+213,California sea lion,Zalophus californicus,Russia,Female,14
+214,"Owl, madagascar hawk",Ninox superciliaris,Portugal,Female,43
+215,"Dove, white-winged",Zenaida asiatica,Poland,Male,73
+216,Crested screamer,Chauna torquata,Dominican Republic,Male,2
+217,"Macaque, bonnet",Macaca radiata,Palestinian Territory,Female,41
+218,Steller's sea lion,Eumetopias jubatus,Peru,Male,8
+219,Malachite kingfisher,Corythornis cristata,Seychelles,Male,85
+220,Openbill stork,Anastomus oscitans,Malta,Male,49
+221,"Baboon, chacma",Papio ursinus,Cameroon,Male,93
+222,North American porcupine,Erethizon dorsatum,United Kingdom,Female,6
+223,"Monkey, rhesus",Macaca mulatta,Portugal,Female,85
+224,Guerza,Colobus guerza,United States,Female,34
+225,"Hyena, striped",Hyaena hyaena,Czech Republic,Female,31
+226,Australian sea lion,Neophoca cinerea,China,Male,52
+227,Denham's bustard,Neotis denhami,Greece,Female,10
+228,"Kingfisher, white-throated",Halcyon smyrnesis,China,Female,86
+229,Common zebra,Equus burchelli,China,Female,43
+230,"Dolphin, bottle-nose",Tursiops truncatus,Portugal,Male,78
+231,Slender-billed cockatoo,Cacatua tenuirostris,Chad,Female,63
+232,"Kangaroo, western grey",Macropus fuliginosus,Colombia,Male,73
+233,"Pie, indian tree",Dendrocitta vagabunda,Czech Republic,Male,72
+234,"Hawk, red-tailed",Buteo jamaicensis,Brazil,Genderqueer,73
+235,Long-nosed bandicoot,Perameles nasuta,Mongolia,Male,84
+236,"Shrike, crimson-breasted",Laniaurius atrococcineus,China,Male,88
+237,Black-backed magpie,Gymnorhina tibicen,Sweden,Non-binary,40
+238,Madagascar fruit bat,Pteropus rufus,Canada,Female,43
+239,"Wombat, southern hairy-nosed",Lasiorhinus latifrons,Portugal,Male,86
+240,"Elk, Wapiti",Cervus canadensis,Philippines,Genderfluid,41
+241,Flightless cormorant,Nannopterum harrisi,Philippines,Female,89
+242,"Elephant, african",Loxodonta africana,Indonesia,Male,94
+243,"Hen, sage",Centrocercus urophasianus,Portugal,Male,79
+244,Common duiker,Sylvicapra grimma,Thailand,Male,78
+245,"Otter, african clawless",Aonyx capensis,Indonesia,Female,9
+246,"Vulture, bengal",Gyps bengalensis,Poland,Female,37
+247,Common nighthawk,Chordeiles minor,Brazil,Male,67
+248,"Sparrow, rufous-collared",Zonotrichia capensis,Poland,Agender,37
+249,American Virginia opossum,Didelphis virginiana,China,Male,63
+250,Kinkajou,Potos flavus,Philippines,Female,62
+251,Pacific gull,Gabianus pacificus,Russia,Female,42
+252,White-headed vulture,Aegypius occipitalis,Indonesia,Female,92
+253,Red-capped cardinal,Paroaria gularis,Indonesia,Female,18
+254,Egyptian cobra,Naja haje,China,Female,92
+255,Gecko (unidentified),unavailable,Brazil,Male,98
+256,African porcupine,Hystrix cristata,Brazil,Female,77
+257,Grey mouse lemur,Microcebus murinus,Indonesia,Female,53
+258,Arctic lemming,Dicrostonyx groenlandicus,Philippines,Male,76
+259,Mourning collared dove,Streptopelia decipiens,Niger,Female,71
+260,Red-billed toucan,Ramphastos tucanus,China,Male,39
+261,"Puffin, horned",Fratercula corniculata,Brazil,Male,64
+262,"Lory, rainbow",Trichoglossus haematodus moluccanus,Brazil,Male,30
+263,South American sea lion,Otaria flavescens,Poland,Male,96
+264,"Jackal, black-backed",Canis mesomelas,Poland,Genderfluid,15
+265,Giraffe,Giraffe camelopardalis,Guinea-Bissau,Male,88
+266,Hottentot teal,Anas punctata,Sweden,Male,51
+267,"Pintail, bahama",Anas bahamensis,Paraguay,Genderfluid,26
+268,"Skua, long-tailed",Stercorarius longicausus,Benin,Male,42
+269,"Bee-eater, carmine",Merops nubicus,Indonesia,Male,58
+270,"Corella, long-billed",Cacatua tenuirostris,Philippines,Genderqueer,22
+271,"Flamingo, chilean",Phoenicopterus chilensis,China,Female,84
+272,"Porcupine, tree",Coendou prehensilis,Thailand,Male,61
+273,"Capuchin, brown",Cebus apella,Peru,Female,67
+274,Short-beaked echidna,Tachyglossus aculeatus,Poland,Female,37
+275,Hummingbird (unidentified),unavailable,China,Bigender,69
+276,"Stork, yellow-billed",Mycteria ibis,Indonesia,Male,66
+277,Eurasian red squirrel,Sciurus vulgaris,Colombia,Female,99
+278,Crab (unidentified),unavailable,Kazakhstan,Female,9
+279,Serval,Felis serval,Poland,Female,97
+280,"Peacock, indian",Pavo cristatus,Cambodia,Female,26
+281,Crested bunting,Melophus lathami,Italy,Female,64
+282,Lesser masked weaver,Ploceus intermedius,Russia,Female,93
+283,"Sheep, red",Ovis ammon,Ukraine,Female,95
+284,"Waxbill, black-cheeked",Estrilda erythronotos,France,Female,8
+285,"Kookaburra, laughing",Dacelo novaeguineae,Canada,Female,54
+286,"Stork, painted",Mycteria leucocephala,China,Male,86
+287,"Bear, polar",Ursus maritimus,Russia,Female,28
+288,"Raccoon, crab-eating",Procyon cancrivorus,Bangladesh,Female,75
+289,Arctic tern,Sterna paradisaea,Philippines,Agender,97
+290,Collared peccary,Tayassu tajacu,Nigeria,Genderqueer,65
+291,"Tortoise, burmese brown mountain",Manouria emys,Philippines,Female,38
+292,"Seal, common",Phoca vitulina,Bahamas,Male,73
+293,Aardwolf,Proteles cristatus,Poland,Female,98
+294,Pale-throated three-toed sloth,Bradypus tridactylus,Nicaragua,Male,85
+295,Raccoon dog,Nyctereutes procyonoides,Brazil,Female,84
+296,"Heron, green",Butorides striatus,Russia,Male,63
+297,"Turkey, australian brush",Alectura lathami,South Africa,Female,95
+298,Oribi,Ourebia ourebi,Egypt,Male,92
+299,Mudskipper (unidentified),unavailable,China,Female,2
+300,Savanna baboon,Papio cynocephalus,Portugal,Non-binary,1
+301,Blue-tongued skink,Tiliqua scincoides,China,Female,100
+302,Downy woodpecker,Picoides pubescens,Philippines,Male,60
+303,Indian star tortoise,Geochelone elegans,China,Female,41
+304,"Capuchin, white-fronted",Cebus albifrons,Thailand,Male,49
+305,"Rhea, gray",Rhea americana,Argentina,Male,24
+306,"Wallaby, bennett's",Macropus rufogriseus,Honduras,Male,13
+307,African black crake,Limnocorax flavirostra,United States,Female,41
+308,"Grenadier, common",Uraeginthus granatina,Brazil,Agender,73
+309,Galah,Eolophus roseicapillus,Kyrgyzstan,Female,45
+310,"Owl, madagascar hawk",Ninox superciliaris,Ukraine,Female,54
+311,"Vulture, turkey",Cathartes aura,Poland,Male,5
+312,Harbor seal,Phoca vitulina,Indonesia,Female,22
+313,Red-breasted cockatoo,Eolophus roseicapillus,Indonesia,Male,95
+314,Smith's bush squirrel,Paraxerus cepapi,China,Female,94
+315,Dama wallaby,Macropus eugenii,Indonesia,Female,52
+316,"Monkey, black spider",Ateles paniscus,Poland,Bigender,22
+317,Brown antechinus,Antechinus flavipes,Philippines,Female,72
+318,"Puma, south american",Felis concolor,Cameroon,Female,3
+319,Square-lipped rhinoceros,Ceratotherium simum,Panama,Female,3
+320,"Raccoon, common",Procyon lotor,Belgium,Female,12
+321,Green vine snake,Oxybelis fulgidus,Philippines,Female,60
+322,Elegant crested tinamou,Eudromia elegans,Russia,Male,53
+323,Bare-faced go away bird,Lorythaixoides concolor,Poland,Male,27
+324,Whip-tailed wallaby,Macropus parryi,France,Male,22
+325,"Turkey, wild",Meleagris gallopavo,South Africa,Male,10
+326,Blue-tongued lizard,Tiliqua scincoides,Colombia,Female,23
+327,Gambel's quail,Callipepla gambelii,Russia,Male,22
+328,"Stork, black-necked",Ephippiorhynchus mycteria,Indonesia,Female,7
+329,Horned rattlesnake,Crotalus cerastes,Finland,Female,22
+330,Giant armadillo,Priodontes maximus,Brazil,Male,80
+331,Cormorant (unidentified),unavailable,Sweden,Female,91
+332,"Roller, lilac-breasted",Coracias caudata,Germany,Non-binary,40
+333,Buttermilk snake,Coluber constrictor,China,Female,20
+334,"Colobus, black and white",Colobus guerza,Philippines,Female,69
+335,Southern black-backed gull,Larus dominicanus,United States,Female,41
+336,"Goldeneye, common",Bucephala clangula,Brazil,Male,33
+337,"Wombat, common",Vombatus ursinus,Japan,Female,76
+338,Common seal,Phoca vitulina,Norway,Male,38
+339,White-winged tern,Chlidonias leucopterus,Indonesia,Female,87
+340,Fringe-eared oryx,Oryx gazella callotis,China,Male,53
+341,"Fox, bat-eared",Otocyon megalotis,Indonesia,Female,3
+342,"Mongoose, eastern dwarf",Helogale undulata,Uruguay,Female,83
+343,Eleven-banded armadillo (unidentified),Cabassous sp.,Norway,Agender,24
+344,"Deer, red",Cervus elaphus,China,Male,25
+345,American buffalo,Bison bison,Russia,Female,68
+346,Red-tailed wambenger,Phascogale calura,China,Male,48
+347,Water moccasin,Agkistrodon piscivorus,Russia,Female,92
+348,"Nighthawk, common",Chordeiles minor,Portugal,Female,94
+349,"Baboon, savanna",Papio cynocephalus,China,Female,92
+350,"Shelduck, european",Tadorna tadorna,Indonesia,Female,42
+351,Grison,Galictis vittata,Palestinian Territory,Male,88
+352,"Nuthatch, red-breasted",Sitta canadensis,Russia,Male,28
+353,"Gazer, sun",Cordylus giganteus,Yemen,Bigender,58
+354,Ibex,Capra ibex,Ukraine,Female,93
+355,Four-spotted skimmer,Libellula quadrimaculata,China,Agender,40
+356,Waved albatross,Diomedea irrorata,Indonesia,Female,77
+357,"Dove, mourning collared",Streptopelia decipiens,Uzbekistan,Genderqueer,76
+358,"Seal, northern elephant",Mirounga angustirostris,Lebanon,Male,37
+359,"Mongoose, yellow",Cynictis penicillata,China,Male,2
+360,American racer,Coluber constrictor,Comoros,Male,43
+361,"Coot, red-knobbed",Fulica cristata,Syria,Female,48
+362,Wild turkey,Meleagris gallopavo,Portugal,Male,30
+363,"Cat, civet",Bassariscus astutus,Russia,Male,72
+364,"Goose, greylag",Anser anser,Poland,Agender,50
+365,Australian pelican,Pelecanus conspicillatus,Russia,Male,72
+366,"Bird, pied butcher",Cracticus nigroagularis,United States,Male,36
+367,Crab (unidentified),unavailable,United States,Female,61
+368,Blue-tongued skink,Tiliqua scincoides,Czech Republic,Male,84
+369,"Dove, emerald-spotted wood",Turtur chalcospilos,North Korea,Female,94
+370,Worm snake (unidentified),Carphophis sp.,Indonesia,Male,69
+371,Cuis,Microcavia australis,Sweden,Female,20
+372,White-throated robin,Irania gutteralis,Argentina,Male,12
+373,"Gull, swallow-tail",Creagrus furcatus,Indonesia,Male,8
+374,White-faced whistling duck,Dendrocygna viduata,Czech Republic,Male,20
+375,Galapagos mockingbird,Nesomimus trifasciatus,Indonesia,Female,76
+376,"Peacock, indian",Pavo cristatus,Portugal,Non-binary,9
+377,"Sheep, red",Ovis ammon,Sweden,Non-binary,22
+378,"Flycatcher, tyrant",Myiarchus tuberculifer,Argentina,Male,29
+379,"Gull, pacific",Gabianus pacificus,Brazil,Male,12
+380,Eleven-banded armadillo (unidentified),Cabassous sp.,Japan,Female,53
+381,"Lion, australian sea",Neophoca cinerea,Poland,Agender,60
+382,Arctic lemming,Dicrostonyx groenlandicus,Philippines,Male,91
+383,"Mongoose, small indian",Herpestes javanicus,Italy,Male,35
+384,"Bat, madagascar fruit",Pteropus rufus,Marshall Islands,Female,87
+385,"Stork, saddle-billed",Ephipplorhynchus senegalensis,Greece,Male,29
+386,White-tailed deer,Odocoilenaus virginianus,Philippines,Female,21
+387,African pied wagtail,Motacilla aguimp,United States,Female,7
+388,"Bat, madagascar fruit",Pteropus rufus,Colombia,Male,36
+389,"Bee-eater, white-fronted",Merops bullockoides,Japan,Female,62
+390,"Colobus, magistrate black",Colobus guerza,Cuba,Male,94
+391,Eastern cottontail rabbit,Sylvilagus floridanus,Philippines,Male,81
+392,"Stork, black-necked",Ephippiorhynchus mycteria,Sweden,Male,79
+393,"Pademelon, red-legged",Thylogale stigmatica,China,Male,63
+394,"Francolin, coqui",Francolinus coqui,Colombia,Female,93
+395,Gray rhea,Rhea americana,Denmark,Female,73
+396,"Duiker, common",Sylvicapra grimma,Portugal,Male,54
+397,Caracara (unidentified),unavailable,Japan,Female,9
+398,"Seal, common",Phoca vitulina,France,Female,16
+399,"Python, carpet",Morelia spilotes variegata,Armenia,Female,89
+400,"Rattlesnake, dusky",Crotalus triseriatus,Indonesia,Female,34
+401,"Marten, american",Martes americana,Portugal,Male,23
+402,Ibex,Capra ibex,Czech Republic,Male,86
+403,Common mynah,Acridotheres tristis,Thailand,Female,44
+404,Curve-billed thrasher,Toxostoma curvirostre,Argentina,Male,43
+405,"Mongoose, javan gold-spotted",Herpestes javanicus,Japan,Male,4
+406,"Weaver, white-browed sparrow",Plocepasser mahali,Somalia,Female,64
+407,"Owl, australian masked",Tyto novaehollandiae,Brazil,Male,17
+408,Oriental white-backed vulture,Gyps bengalensis,Angola,Male,79
+409,"Marmot, yellow-bellied",Marmota flaviventris,Finland,Female,51
+410,"Egret, great",Casmerodius albus,Japan,Female,2
+411,White-faced whistling duck,Dendrocygna viduata,China,Male,10
+412,"Insect, stick",Leprocaulinus vipera,Bolivia,Male,40
+413,Dingo,Canis dingo,Greece,Female,59
+414,Brown lemur,Lemur fulvus,Saint Lucia,Non-binary,99
+415,Sun gazer,Cordylus giganteus,China,Female,46
+416,Lesser flamingo,Phoeniconaias minor,Indonesia,Female,71
+417,"Antechinus, brown",Antechinus flavipes,China,Male,37
+418,"Otter, giant",Pteronura brasiliensis,Portugal,Female,66
+419,"Duck, white-faced whistling",Dendrocygna viduata,Afghanistan,Male,41
+420,White rhinoceros,Ceratotherium simum,Canada,Non-binary,29
+421,"Spoonbill, european",Platalea leucordia,Poland,Male,60
+422,"Vulture, egyptian",Neophron percnopterus,South Africa,Male,10
+423,"Jackrabbit, white-tailed",Lepus townsendii,Sri Lanka,Female,17
+424,Galapagos mockingbird,Nesomimus trifasciatus,France,Female,42
+425,"Macaw, red and blue",Ara chloroptera,South Africa,Male,62
+426,Asian elephant,Elephas maximus bengalensis,China,Male,33
+427,Kirk's dik dik,Madoqua kirkii,United States,Male,87
+428,Lappet-faced vulture,Aegypius tracheliotus,Greece,Female,29
+429,Tasmanian devil,Sarcophilus harrisii,Indonesia,Female,75
+430,"Moorhen, purple",Porphyrio porphyrio,China,Male,8
+431,"Hartebeest, red",Alcelaphus buselaphus caama,Thailand,Male,45
+432,"Crane, brolga",Grus rubicundus,Indonesia,Male,5
+433,"Dog, bush",Speothos vanaticus,Japan,Female,87
+434,"Possum, common brushtail",Trichosurus vulpecula,Poland,Female,98
+435,Mouflon,Ovis musimon,Albania,Male,48
+436,Black rhinoceros,Diceros bicornis,China,Male,39
+437,"Crocodile, nile",Crocodylus niloticus,Malaysia,Genderfluid,75
+438,White-rumped vulture,Gyps bengalensis,Russia,Female,81
+439,Springbok,Antidorcas marsupialis,Nigeria,Female,76
+440,"Lion, california sea",Zalophus californicus,Philippines,Female,21
+441,Malabar squirrel,Ratufa indica,Sweden,Male,50
+442,"Vulture, white-headed",Aegypius occipitalis,Yemen,Polygender,38
+443,Warthog,Phacochoerus aethiopus,Mongolia,Female,48
+444,Asian elephant,Elephas maximus bengalensis,Portugal,Male,40
+445,"Ass, asiatic wild",Equus hemionus,Panama,Male,3
+446,African buffalo,Snycerus caffer,Kyrgyzstan,Male,72
+447,"Admiral, indian red",Vanessa indica,Azerbaijan,Female,15
+448,Snow goose,Anser caerulescens,China,Female,48
+449,"Cat, civet",Bassariscus astutus,Solomon Islands,Agender,46
+450,Barasingha deer,Cervus duvauceli,France,Male,1
+451,"Eagle, tawny",Anitibyx armatus,Indonesia,Polygender,28
+452,"Cormorant, king",Phalacrocorax albiventer,Indonesia,Male,88
+453,"Phalarope, red-necked",Phalaropus lobatus,Russia,Female,94
+454,Asian false vampire bat,Megaderma spasma,China,Male,62
+455,Sable antelope,Hippotragus niger,Czech Republic,Male,51
+456,"Cat, kaffir",Felis silvestris lybica,Belarus,Male,78
+457,"Spoonbill, european",Platalea leucordia,Sweden,Female,95
+458,"Turkey, wild",Meleagris gallopavo,Guatemala,Male,29
+459,Common ringtail,Pseudocheirus peregrinus,Greece,Male,78
+460,White-faced tree rat,Echimys chrysurus,China,Male,85
+461,"Heron, grey",Ardea cinerea,Sweden,Female,44
+462,"Cat, cape wild",Felis libyca,Ukraine,Female,18
+463,Banded mongoose,Mungos mungo,Philippines,Female,92
+464,Topi,Damaliscus lunatus,Sweden,Female,7
+465,North American beaver,Castor canadensis,Mexico,Male,13
+466,"Egret, snowy",Egretta thula,Indonesia,Female,45
+467,"Beaver, american",Castor canadensis,Ukraine,Female,4
+468,Potoroo,Potorous tridactylus,United States,Female,98
+469,Great white pelican,Pelecans onocratalus,Peru,Female,81
+470,"Gull, silver",Larus novaehollandiae,Russia,Female,58
+471,White-winged tern,Chlidonias leucopterus,Argentina,Male,83
+472,Red meerkat,Cynictis penicillata,Canada,Female,6
+473,Northern fur seal,Callorhinus ursinus,Philippines,Female,68
+474,Pale white-eye,Zosterops pallidus,Democratic Republic of the Congo,Male,94
+475,"Waxbill, violet-eared",Uraeginthus granatina,Sweden,Bigender,8
+476,Sportive lemur,Lepilemur rufescens,Poland,Non-binary,24
+477,"Parrot, hawk-headed",Deroptyus accipitrinus,Indonesia,Female,66
+478,"Roller, lilac-breasted",Coracias caudata,Indonesia,Female,24
+479,Sacred ibis,Threskionis aethiopicus,Poland,Male,44
+480,Hottentot teal,Anas punctata,Russia,Female,38
+481,Asian water buffalo,Bubalus arnee,Philippines,Female,19
+482,"Jackal, silver-backed",Canis mesomelas,China,Male,10
+483,Mara,Dolichitus patagonum,Kazakhstan,Male,81
+484,"Cockatoo, roseate",Eolophus roseicapillus,Brazil,Female,40
+485,"Stork, painted",Mycteria leucocephala,Portugal,Female,87
+486,Cereopsis goose,Cereopsis novaehollandiae,Greece,Agender,23
+487,"Gazer, sun",Cordylus giganteus,Slovenia,Male,9
+488,Little grebe,Tachybaptus ruficollis,China,Male,2
+489,"Wolf, mexican",Canis lupus baileyi,Finland,Female,42
+490,"Dog, african wild",Lycaon pictus,Central African Republic,Female,69
+491,Sockeye salmon,Oncorhynchus nerka,Russia,Male,8
+492,"Bat, madagascar fruit",Pteropus rufus,China,Male,15
+493,"Dog, bush",Speothos vanaticus,Indonesia,Female,14
+494,Long-crested hawk eagle,Lophoaetus occipitalis,Sweden,Male,92
+495,Bald eagle,Haliaeetus leucocephalus,China,Male,99
+496,Slender-billed cockatoo,Cacatua tenuirostris,Senegal,Male,52
+497,"Squirrel, pine",Tamiasciurus hudsonicus,Colombia,Male,48
+498,Fairy penguin,Eudyptula minor,China,Male,19
+499,"Macaw, blue and gold",Ara ararauna,Philippines,Male,71
+500,"Trotter, lily",Actophilornis africanus,Jordan,Female,85
+501,Eastern diamondback rattlesnake,Crotalus adamanteus,Philippines,Male,91
+502,Jungle cat,Felis chaus,Honduras,Male,56
+503,Scottish highland cow,Bos taurus,Myanmar,Male,17
+504,"White-eye, cape",Zosterops pallidus,Philippines,Female,31
+505,Coyote,Canis latrans,Brazil,Female,81
+506,Blesbok,Damaliscus dorcas,Cuba,Male,83
+507,"Brocket, brown",Mazama gouazoubira,Iran,Female,76
+508,Blue and gold macaw,Ara ararauna,Russia,Male,3
+509,"Gnu, brindled",Connochaetus taurinus,Indonesia,Female,19
+510,"Jackal, golden",Canis aureus,Indonesia,Agender,59
+511,Common dolphin,Delphinus delphis,Indonesia,Female,45
+512,Mississippi alligator,Alligator mississippiensis,Mexico,Polygender,11
+513,"Squirrel, richardson's ground",Spermophilus richardsonii,Sweden,Male,99
+514,Indian jackal,Canis aureus,Serbia,Female,17
+515,Marabou stork,Leptoptilos crumeniferus,Russia,Female,42
+516,Groundhog,Marmota monax,Poland,Female,71
+517,Impala,Aepyceros mylampus,Indonesia,Male,69
+518,Lesser masked weaver,Ploceus intermedius,China,Female,93
+519,Springbuck,Antidorcas marsupialis,Denmark,Female,38
+520,"Sunbird, lesser double-collared",Nectarinia chalybea,China,Female,1
+521,"Dove, mourning collared",Streptopelia decipiens,China,Female,83
+522,Bennett's wallaby,Macropus rufogriseus,Paraguay,Male,66
+523,"Tern, white-winged black",Chlidonias leucopterus,Ukraine,Polygender,37
+524,"Jackrabbit, white-tailed",Lepus townsendii,Liberia,Female,47
+525,Adouri (unidentified),unavailable,Portugal,Male,53
+526,Blue-faced booby,Sula dactylatra,United States,Female,38
+527,Flying fox (unidentified),unavailable,Italy,Male,26
+528,"Bear, sloth",Melursus ursinus,United States,Female,78
+529,"Bee-eater, white-fronted",Merops bullockoides,France,Male,55
+530,Blue-faced booby,Sula dactylatra,Benin,Male,72
+531,"Trumpeter, dark-winged",Psophia viridis,Zambia,Male,34
+532,"Lion, australian sea",Neophoca cinerea,Indonesia,Female,47
+533,"Fox, arctic",Alopex lagopus,Kazakhstan,Female,22
+534,Bontebok,Damaliscus dorcas,Sweden,Female,90
+535,Egyptian viper,Naja haje,Indonesia,Male,33
+536,"Boubou, southern",Laniarius ferrugineus,Kazakhstan,Male,42
+537,Egyptian cobra,Naja haje,Poland,Female,86
+538,Brown brocket,Mazama gouazoubira,Portugal,Male,19
+539,Sockeye salmon,Oncorhynchus nerka,China,Female,41
+540,Snake-necked turtle,Chelodina longicollis,France,Polygender,94
+541,"Stork, white",Ciconia ciconia,Russia,Male,37
+542,Feathertail glider,Acrobates pygmaeus,Russia,Female,44
+543,Red kangaroo,Macropus rufus,Philippines,Female,68
+544,Laughing kookaburra,Dacelo novaeguineae,Portugal,Female,52
+545,"Lapwing, southern",Vanellus chilensis,Poland,Female,63
+546,Platypus,Ornithorhynchus anatinus,China,Female,46
+547,Rufous tree pie,Dendrocitta vagabunda,Andorra,Male,57
+548,"Gecko, tokay",Gekko gecko,Azerbaijan,Female,97
+549,"Sandpiper, spotted wood",Tringa glareola,China,Genderqueer,38
+550,White-fronted capuchin,Cebus albifrons,Kosovo,Male,55
+551,"White-eye, cape",Zosterops pallidus,Greece,Male,99
+552,Great skua,Catharacta skua,Sri Lanka,Non-binary,85
+553,Indian leopard,Panthera pardus,Thailand,Male,50
+554,Clark's nutcracker,Nucifraga columbiana,Palestinian Territory,Male,73
+555,Savanna baboon,Papio cynocephalus,Brazil,Female,83
+556,Asian lion,Panthera leo persica,Poland,Female,79
+557,"Crab, red lava",Graspus graspus,Hong Kong,Female,11
+558,Golden jackal,Canis aureus,China,Female,33
+559,Southern brown bandicoot,Isoodon obesulus,United States,Female,88
+560,"Possum, western pygmy",Cercatetus concinnus,Nigeria,Male,93
+561,Netted rock dragon,Ctenophorus ornatus,France,Male,21
+562,Red-capped cardinal,Paroaria gularis,Nicaragua,Female,61
+563,White-tailed jackrabbit,Lepus townsendii,Afghanistan,Male,8
+564,South American sea lion,Otaria flavescens,Russia,Male,12
+565,"Wallaby, agile",Macropus agilis,Namibia,Male,25
+566,"Moorhen, purple",Porphyrio porphyrio,China,Female,89
+567,"Grenadier, common",Uraeginthus granatina,Indonesia,Genderfluid,68
+568,"Frogmouth, tawny",Podargus strigoides,China,Female,21
+569,Gerenuk,Litrocranius walleri,Ukraine,Male,77
+570,Southern elephant seal,Mirounga leonina,Netherlands,Polygender,47
+571,Fringe-eared oryx,Oryx gazella callotis,Chile,Female,47
+572,"Fox, bat-eared",Otocyon megalotis,Poland,Male,75
+573,Asiatic wild ass,Equus hemionus,France,Female,25
+574,North American porcupine,Erethizon dorsatum,Indonesia,Female,84
+575,"Boa, emerald green tree",Boa caninus,Indonesia,Male,4
+576,Black curlew,Haematopus ater,Tanzania,Male,28
+577,Paradoxure,Paradoxurus hermaphroditus,China,Male,86
+578,Asian foreset tortoise,Manouria emys,China,Male,30
+579,Javanese cormorant,Phalacrocorax niger,China,Female,76
+580,Turtle (unidentified),unavailable,China,Male,70
+581,Long-tailed skua,Stercorarius longicausus,Peru,Female,63
+582,African elephant,Loxodonta africana,China,Male,88
+583,"Avocet, pied",Recurvirostra avosetta,Barbados,Male,19
+584,Australian brush turkey,Alectura lathami,Philippines,Female,3
+585,Wattled crane,Bugeranus caruncalatus,Argentina,Male,43
+586,"Phalarope, grey",Phalaropus fulicarius,France,Female,28
+587,Black-capped capuchin,Cebus apella,Indonesia,Agender,13
+588,"Cat, long-tailed spotted",Felis wiedi or Leopardus weidi,Indonesia,Female,57
+589,"Tapir, brazilian",Tapirus terrestris,Brazil,Male,78
+590,"Pintail, bahama",Anas bahamensis,Japan,Female,1
+591,Greater rhea,Rhea americana,China,Male,53
+592,"Eagle, african fish",Haliaetus vocifer,Brazil,Female,2
+593,Tawny eagle,Anitibyx armatus,China,Male,80
+594,"Stork, yellow-billed",Mycteria ibis,China,Female,24
+595,Canada goose,Branta canadensis,China,Female,63
+596,"Flamingo, chilean",Phoenicopterus chilensis,Portugal,Male,8
+597,Aardwolf,Proteles cristatus,Indonesia,Male,39
+598,"Duck, mountain",Hymenolaimus malacorhynchus,South Africa,Female,37
+599,"Oryx, fringe-eared",Oryx gazella callotis,Pakistan,Male,49
+600,Ostrich,Struthio camelus,Chile,Female,24
+601,"Sloth, two-toed tree",Choloepus hoffmani,Philippines,Female,1
+602,"Possum, ring-tailed",Pseudocheirus peregrinus,Indonesia,Male,16
+603,Eastern grey kangaroo,Macropus giganteus,Russia,Female,29
+604,"Pademelon, red-legged",Thylogale stigmatica,Philippines,Female,31
+605,Common pheasant,Phasianus colchicus,Armenia,Polygender,40
+606,Pig-tailed macaque,Macaca nemestrina,Philippines,Female,56
+607,Kirk's dik dik,Madoqua kirkii,China,Male,13
+608,Four-striped grass mouse,Rhabdomys pumilio,Portugal,Male,20
+609,Black-capped chickadee,Parus atricapillus,Poland,Male,53
+610,"Hornbill, yellow-billed",Tockus flavirostris,Paraguay,Male,10
+611,Ring-necked pheasant,Phasianus colchicus,China,Male,56
+612,Pale-throated three-toed sloth,Bradypus tridactylus,China,Female,81
+613,Dromedary camel,Camelus dromedarius,Indonesia,Male,95
+614,"Deer, savannah",Mazama gouazoubira,Russia,Female,48
+615,"Egret, cattle",Bubulcus ibis,Thailand,Male,27
+616,Plains zebra,Equus burchelli,Morocco,Female,61
+617,Springhare,Pedetes capensis,Vietnam,Female,38
+618,"Nighthawk, common",Chordeiles minor,Indonesia,Male,66
+619,"Rat, desert kangaroo",Dipodomys deserti,Philippines,Male,36
+620,Red-tailed phascogale,Phascogale calura,Armenia,Female,25
+621,"Macaw, blue and yellow",Ara ararauna,Philippines,Male,84
+622,"Turtle, eastern box",Terrapene carolina,Indonesia,Male,79
+623,European badger,Meles meles,Israel,Female,60
+624,European badger,Meles meles,Gabon,Male,96
+625,"Porcupine, crested",Hystrix cristata,France,Female,37
+626,"Lion, australian sea",Neophoca cinerea,Ukraine,Female,62
+627,White-mantled colobus,Colobus guerza,Sweden,Female,81
+628,Sockeye salmon,Oncorhynchus nerka,Greece,Male,90
+629,Australian masked owl,Tyto novaehollandiae,South Africa,Male,31
+630,"Deer, savannah",Mazama gouazoubira,Dominican Republic,Male,36
+631,"Deer, black-tailed",Odocoileus hemionus,Portugal,Male,97
+632,"Gonolek, burchell's",Laniaurius atrococcineus,Serbia,Male,79
+633,South American sea lion,Otaria flavescens,France,Male,68
+634,Red-necked phalarope,Phalaropus lobatus,Japan,Bigender,45
+635,"Possum, ring-tailed",Pseudocheirus peregrinus,China,Female,48
+636,Roe deer,Capreolus capreolus,Indonesia,Female,13
+637,"Crane, sarus",Grus antigone,Poland,Female,84
+638,Painted stork,Mycteria leucocephala,Sweden,Male,62
+639,Australian pelican,Pelecanus conspicillatus,Sri Lanka,Male,48
+640,Wild water buffalo,Bubalus arnee,Peru,Female,58
+641,"Sifaka, verreaux's",Propithecus verreauxi,Brazil,Female,61
+642,African clawless otter,Aonyx capensis,China,Male,96
+643,"Barbet, crested",Trachyphonus vaillantii,China,Male,28
+644,"Squirrel, eurasian red",Sciurus vulgaris,Bhutan,Male,9
+645,Black swan,Cygnus atratus,France,Female,9
+646,"Wallaby, euro",Macropus robustus,Morocco,Male,55
+647,Ferruginous hawk,Buteo regalis,Venezuela,Female,36
+648,"Cormorant, great",Phalacrocorax carbo,Mongolia,Male,57
+649,Bateleur eagle,Terathopius ecaudatus,China,Male,37
+650,Javan gold-spotted mongoose,Herpestes javanicus,Israel,Male,63
+651,Nine-banded armadillo,Dasypus novemcinctus,Russia,Male,74
+652,"Cobra, cape",Naja nivea,Brazil,Female,84
+653,Egyptian goose,Alopochen aegyptiacus,Philippines,Male,11
+654,"Crab, red lava",Graspus graspus,Philippines,Agender,47
+655,Common long-nosed armadillo,Dasypus novemcinctus,China,Male,4
+656,Darwin ground finch (unidentified),Geospiza sp.,Czech Republic,Female,25
+657,Egyptian goose,Alopochen aegyptiacus,Colombia,Male,93
+658,"Squirrel, african bush",Paraxerus cepapi,Brazil,Female,37
+659,"Bee-eater, carmine",Merops nubicus,China,Male,91
+660,Bird (unidentified),unavailable,Ukraine,Male,94
+661,Cape cobra,Naja nivea,Russia,Male,56
+662,"Duck, white-faced whistling",Dendrocygna viduata,Palestinian Territory,Female,42
+663,"Owl, madagascar hawk",Ninox superciliaris,China,Male,42
+664,Tammar wallaby,Macropus eugenii,Russia,Female,56
+665,Common goldeneye,Bucephala clangula,Afghanistan,Female,74
+666,European beaver,Castor fiber,Ghana,Male,50
+667,"Woodcock, american",Scolopax minor,China,Male,69
+668,Javan gold-spotted mongoose,Herpestes javanicus,Indonesia,Male,59
+669,Roan antelope,Hippotragus equinus,Malta,Female,8
+670,American buffalo,Bison bison,Philippines,Female,66
+671,Red lava crab,Graspus graspus,Estonia,Male,24
+672,Chacma baboon,Papio ursinus,Sweden,Male,21
+673,Common rhea,Rhea americana,Japan,Male,50
+674,"Loris, slender",Loris tardigratus,Costa Rica,Male,71
+675,Eastern dwarf mongoose,Helogale undulata,China,Female,10
+676,Water legaan,Varanus salvator,Philippines,Male,22
+677,Sloth bear,Melursus ursinus,China,Female,14
+678,"Tortoise, radiated",Geochelone radiata,Indonesia,Female,76
+679,"Vulture, turkey",Cathartes aura,Indonesia,Female,6
+680,"Cormorant, king",Phalacrocorax albiventer,Indonesia,Male,2
+681,River wallaby,Macropus agilis,Russia,Male,84
+682,Japanese macaque,Macaca fuscata,United States,Female,58
+683,Mocking cliffchat,Thamnolaea cinnmomeiventris,China,Female,65
+684,"Whale, southern right",Eubalaena australis,Indonesia,Female,16
+685,"Lion, southern sea",Otaria flavescens,Poland,Female,44
+686,Long-tailed jaeger,Stercorarius longicausus,Indonesia,Non-binary,61
+687,"Eagle, white-bellied sea",Haliaetus leucogaster,Philippines,Male,5
+688,Levaillant's barbet,Trachyphonus vaillantii,Ukraine,Female,36
+689,Arctic ground squirrel,Spermophilus parryii,Brazil,Male,33
+690,"Grebe, little",Tachybaptus ruficollis,Philippines,Male,84
+691,"Sparrow, rufous-collared",Zonotrichia capensis,Philippines,Bigender,75
+692,Crested barbet,Trachyphonus vaillantii,Ukraine,Male,2
+693,Caracara (unidentified),unavailable,Indonesia,Female,94
+694,"Squirrel, nelson ground",Ammospermophilus nelsoni,Sweden,Male,46
+695,"Gull, southern black-backed",Larus dominicanus,Kazakhstan,Male,92
+696,"Pintail, bahama",Anas bahamensis,Armenia,Male,69
+697,Gila monster,Heloderma horridum,Pakistan,Female,77
+698,"Screamer, southern",Chauna torquata,China,Female,48
+699,"Goose, cereopsis",Cereopsis novaehollandiae,China,Female,42
+700,"Spoonbill, european",Platalea leucordia,Croatia,Female,56
+701,"Possum, common brushtail",Trichosurus vulpecula,Poland,Female,62
+702,"Wildebeest, blue",Connochaetus taurinus,Brazil,Male,42
+703,Chameleon (unidentified),Chamaelo sp.,Russia,Male,8
+704,Leopard,Panthera pardus,Peru,Female,70
+705,Black swan,Cygnus atratus,Philippines,Male,66
+706,American black bear,Ursus americanus,Yemen,Male,70
+707,Toddy cat,Paradoxurus hermaphroditus,Tanzania,Female,67
+708,"Bulbul, black-eyed",Pycnonotus barbatus,Philippines,Male,39
+709,Red lava crab,Graspus graspus,Czech Republic,Female,48
+710,"Whale, southern right",Eubalaena australis,Indonesia,Female,7
+711,"Duiker, gray",Sylvicapra grimma,China,Bigender,96
+712,Long-tailed jaeger,Stercorarius longicausus,Nigeria,Polygender,1
+713,"Phalarope, northern",Phalaropus lobatus,Indonesia,Female,36
+714,Black-backed jackal,Canis mesomelas,Palestinian Territory,Male,44
+715,"Dragon, frilled",Chlamydosaurus kingii,China,Female,89
+716,"Lion, african",Panthera leo,Egypt,Female,95
+717,Common langur,Semnopithecus entellus,China,Male,7
+718,Red-cheeked cordon bleu,Uraeginthus bengalus,France,Bigender,43
+719,Lesser flamingo,Phoeniconaias minor,Indonesia,Male,16
+720,"Jackrabbit, white-tailed",Lepus townsendii,Panama,Female,79
+721,"Lemur, ring-tailed",Lemur catta,Finland,Male,48
+722,"Porcupine, tree",Coendou prehensilis,Indonesia,Female,48
+723,Egyptian cobra,Naja haje,Mexico,Male,8
+724,Kongoni,Alcelaphus buselaphus cokii,Kenya,Male,91
+725,"Robin, kalahari scrub",Certotrichas paena,China,Male,96
+726,Yellow-headed caracara,Milvago chimachima,Philippines,Male,24
+727,Sage hen,Centrocercus urophasianus,Mayotte,Female,21
+728,"Crow, american",Corvus brachyrhynchos,Nigeria,Male,66
+729,"Tortoise, galapagos",Geochelone elephantopus,Indonesia,Female,58
+730,Magistrate black colobus,Colobus guerza,Kyrgyzstan,Female,66
+731,"Eland, common",Taurotagus oryx,Bangladesh,Male,74
+732,Black-footed ferret,Mustela nigripes,Philippines,Male,74
+733,Black-throated butcher bird,Cracticus nigroagularis,Indonesia,Female,5
+734,Horned rattlesnake,Crotalus cerastes,Honduras,Male,71
+735,"Alligator, american",Alligator mississippiensis,Indonesia,Male,57
+736,Golden jackal,Canis aureus,Philippines,Female,87
+737,"Heron, black-crowned night",Nycticorax nycticorax,China,Male,28
+738,Killer whale,Orcinus orca,Russia,Male,25
+739,Australian masked owl,Tyto novaehollandiae,Haiti,Male,65
+740,Black and white colobus,Colobus guerza,Russia,Female,54
+741,"Stork, european",Ciconia ciconia,Mexico,Female,74
+742,Dusky rattlesnake,Crotalus triseriatus,United States,Male,45
+743,"Insect, stick",Leprocaulinus vipera,Syria,Agender,7
+744,"Cat, african wild",Felis silvestris lybica,Russia,Male,67
+745,Pine squirrel,Tamiasciurus hudsonicus,China,Female,29
+746,Bonnet macaque,Macaca radiata,Greece,Polygender,64
+747,"Bat, madagascar fruit",Pteropus rufus,Indonesia,Agender,6
+748,"Phalarope, grey",Phalaropus fulicarius,Peru,Female,15
+749,Salmon pink bird eater tarantula,Lasiodora parahybana,Ukraine,Female,4
+750,"Butterfly, tropical buckeye",Junonia genoveua,Egypt,Male,96
+751,Australian masked owl,Tyto novaehollandiae,China,Male,46
+752,"Boar, wild",Sus scrofa,China,Genderqueer,13
+753,"Cat, jungle",Felis chaus,Indonesia,Male,68
+754,"Vulture, egyptian",Neophron percnopterus,France,Female,80
+755,"Caiman, spectacled",Caiman crocodilus,China,Male,26
+756,"Fox, crab-eating",Dusicyon thous,Indonesia,Female,80
+757,"Ferret, black-footed",Mustela nigripes,China,Male,28
+758,Malabar squirrel,Ratufa indica,China,Female,15
+759,Dabchick,Tachybaptus ruficollis,China,Female,77
+760,Cormorant (unidentified),unavailable,Philippines,Male,28
+761,"Phascogale, brush-tailed",Phascogale tapoatafa,Indonesia,Female,69
+762,"Flycatcher, tyrant",Myiarchus tuberculifer,Peru,Female,10
+763,Common wolf,Canis lupus,Poland,Female,21
+764,White-rumped vulture,Gyps bengalensis,China,Non-binary,35
+765,Brush-tailed bettong,Bettongia penicillata,Philippines,Male,7
+766,"Elephant, african",Loxodonta africana,France,Female,16
+767,Arctic tern,Sterna paradisaea,Croatia,Female,27
+768,Brazilian otter,Pteronura brasiliensis,Kosovo,Female,28
+769,Tokay gecko,Gekko gecko,Brazil,Female,84
+770,"Rat, arboral spiny",Echimys chrysurus,Russia,Male,82
+771,Moose,Alces alces,Ukraine,Male,56
+772,"Heron, goliath",Ardea golieth,New Zealand,Male,30
+773,"Rattlesnake, horned",Crotalus cerastes,Honduras,Male,4
+774,"Wallaby, tammar",Macropus eugenii,Ukraine,Female,36
+775,"Monkey, vervet",Cercopithecus aethiops,Vietnam,Female,48
+776,Swallow (unidentified),unavailable,Brazil,Male,78
+777,Desert kangaroo rat,Dipodomys deserti,Belarus,Female,82
+778,"Baboon, olive",Papio cynocephalus,Indonesia,Female,50
+779,Salmon pink bird eater tarantula,Lasiodora parahybana,China,Female,56
+780,"Sandpiper, spotted wood",Tringa glareola,Indonesia,Male,75
+781,American woodcock,Scolopax minor,Canada,Male,84
+782,White-browed owl,Ninox superciliaris,China,Agender,1
+783,Praying mantis (unidentified),unavailable,Indonesia,Female,60
+784,"Lechwe, kafue flats",Kobus leche robertsi,Brazil,Male,57
+785,"Cockatoo, red-tailed",Calyptorhynchus magnificus,Portugal,Female,37
+786,Praying mantis (unidentified),unavailable,Brazil,Female,38
+787,Cuis,Microcavia australis,France,Male,14
+788,Southern screamer,Chauna torquata,Philippines,Male,64
+789,Mule deer,Odocoileus hemionus,Honduras,Female,19
+790,Radiated tortoise,Geochelone radiata,Indonesia,Female,49
+791,"Dragon, western bearded",Amphibolurus barbatus,Brazil,Genderfluid,26
+792,"Mongoose, javan gold-spotted",Herpestes javanicus,Poland,Male,47
+793,"Seal, northern fur",Callorhinus ursinus,China,Male,15
+794,"Albatross, waved",Diomedea irrorata,China,Male,45
+795,"Colobus, white-mantled",Colobus guerza,Brazil,Female,74
+796,Black-tailed deer,Odocoileus hemionus,Brazil,Female,99
+797,Four-horned antelope,Tetracerus quadricornis,Syria,Female,30
+798,Harbor seal,Phoca vitulina,Ecuador,Female,96
+799,"Gull, lava",Larus fuliginosus,Poland,Male,63
+800,American alligator,Alligator mississippiensis,Cambodia,Female,21
+801,Feral rock pigeon,Columba livia,China,Genderfluid,17
+802,Arctic fox,Alopex lagopus,China,Male,94
+803,"Vulture, turkey",Cathartes aura,Vietnam,Male,52
+804,"Porcupine, north american",Erethizon dorsatum,Croatia,Male,38
+805,"Weaver, white-browed sparrow",Plocepasser mahali,China,Male,11
+806,Tawny eagle,Anitibyx armatus,Canada,Female,86
+807,"Crane, black-crowned",Balearica pavonina,Poland,Female,7
+808,Malleefowl,Leipoa ocellata,Philippines,Male,62
+809,Southern hairy-nosed wombat,Lasiorhinus latifrons,China,Male,22
+810,"Iguana, land",Conolophus subcristatus,Russia,Male,19
+811,Coqui francolin,Francolinus coqui,Uganda,Agender,75
+812,"Duck, mountain",Hymenolaimus malacorhynchus,Colombia,Bigender,88
+813,"Cormorant, little",Phalacrocorax niger,Colombia,Female,82
+814,"Gull, lava",Larus fuliginosus,China,Male,2
+815,Lesser double-collared sunbird,Nectarinia chalybea,China,Male,100
+816,"Bleu, blue-breasted cordon",Uraeginthus angolensis,Portugal,Male,34
+817,"Jackal, silver-backed",Canis mesomelas,France,Male,78
+818,Black-throated cardinal,Paroaria gularis,Argentina,Bigender,53
+819,Eastern cottontail rabbit,Sylvilagus floridanus,Indonesia,Genderqueer,36
+820,"Wolf, common",Canis lupus,Belarus,Female,25
+821,European stork,Ciconia ciconia,Philippines,Male,46
+822,Hudsonian godwit,Limosa haemastica,Sweden,Male,26
+823,"Seal, common",Phoca vitulina,Sweden,Male,29
+824,"Stork, greater adjutant",Leptoptilus dubius,Netherlands,Non-binary,53
+825,"Dragon, komodo",Varanus komodensis,Dominican Republic,Female,48
+826,"Owl, snowy",Nyctea scandiaca,Finland,Female,22
+827,Comb duck,Sarkidornis melanotos,Portugal,Female,15
+828,Pig-tailed macaque,Macaca nemestrina,Russia,Male,21
+829,"Squirrel, malabar",Ratufa indica,Russia,Male,95
+830,Four-striped grass mouse,Rhabdomys pumilio,Indonesia,Female,50
+831,Giant heron,Ardea golieth,France,Male,69
+832,"Hyena, striped",Hyaena hyaena,China,Male,79
+833,Tawny frogmouth,Podargus strigoides,China,Male,100
+834,Asian water buffalo,Bubalus arnee,China,Male,95
+835,"Deer, red",Cervus elaphus,Poland,Non-binary,12
+836,Collared peccary,Tayassu tajacu,Poland,Female,38
+837,"Sloth, two-toed",Choloepus hoffmani,Finland,Male,98
+838,"Bee-eater, carmine",Merops nubicus,China,Male,42
+839,"Mongoose, javan gold-spotted",Herpestes javanicus,Poland,Female,18
+840,"Bee-eater, white-fronted",Merops bullockoides,Philippines,Male,33
+841,"Pigeon, feral rock",Columba livia,Ghana,Female,54
+842,"Jacana, african",Actophilornis africanus,Brazil,Non-binary,32
+843,"Whale, killer",Orcinus orca,Kazakhstan,Male,12
+844,"Duiker, gray",Sylvicapra grimma,Portugal,Bigender,9
+845,"Flamingo, chilean",Phoenicopterus chilensis,Malaysia,Genderfluid,5
+846,Hudsonian godwit,Limosa haemastica,Ukraine,Female,40
+847,Pygmy possum,Acrobates pygmaeus,Russia,Male,58
+848,Whip-tailed wallaby,Macropus parryi,Ivory Coast,Male,35
+849,"Stork, greater adjutant",Leptoptilus dubius,Russia,Male,22
+850,"Mongoose, yellow",Cynictis penicillata,Colombia,Female,1
+851,"Colobus, black and white",Colobus guerza,Portugal,Male,55
+852,Giraffe,Giraffe camelopardalis,Indonesia,Male,21
+853,"Phalarope, grey",Phalaropus fulicarius,Russia,Male,56
+854,"Hedgehog, south african",Erinaceus frontalis,Greece,Male,56
+855,Uinta ground squirrel,Spermophilus armatus,Poland,Female,85
+856,Arctic fox,Alopex lagopus,Philippines,Female,16
+857,Magistrate black colobus,Colobus guerza,Mexico,Male,44
+858,"Heron, green",Butorides striatus,Pakistan,Female,81
+859,Collared lemming,Dicrostonyx groenlandicus,Poland,Female,86
+860,"Hyena, spotted",Crocuta crocuta,China,Male,87
+861,Brazilian tapir,Tapirus terrestris,Philippines,Male,6
+862,"Baboon, yellow",Papio cynocephalus,China,Female,62
+863,Tayra,Eira barbata,Argentina,Female,56
+864,Eastern box turtle,Terrapene carolina,Iran,Non-binary,89
+865,"Monkey, black spider",Ateles paniscus,Cameroon,Male,83
+866,Swallow-tail gull,Creagrus furcatus,Czech Republic,Male,88
+867,White-fronted bee-eater,Merops bullockoides,China,Female,71
+868,"Wallaby, whip-tailed",Macropus parryi,Honduras,Male,18
+869,"Gorilla, western lowland",Gorilla gorilla,Canada,Male,7
+870,American bighorn sheep,Ovis canadensis,Vietnam,Female,80
+871,Woylie,Bettongia penicillata,Indonesia,Male,71
+872,Red brocket,Mazama americana,China,Female,81
+873,"Weaver, chestnut",Ploceus rubiginosus,Philippines,Male,82
+874,Miner's cat,Bassariscus astutus,Bulgaria,Male,86
+875,Indian leopard,Panthera pardus,Indonesia,Female,41
+876,Great cormorant,Phalacrocorax carbo,Russia,Female,86
+877,"Stork, white",Ciconia ciconia,Hungary,Female,88
+878,Striped skunk,Mephitis mephitis,China,Female,78
+879,"Vulture, oriental white-backed",Gyps bengalensis,Russia,Male,89
+880,"Sheep, american bighorn",Ovis canadensis,Colombia,Male,15
+881,"Hornbill, yellow-billed",Tockus flavirostris,Albania,Male,58
+882,Plains zebra,Equus burchelli,China,Non-binary,27
+883,Koala,Phascolarctos cinereus,China,Agender,56
+884,"Dik, kirk's dik",Madoqua kirkii,Cuba,Female,75
+885,"Heron, giant",Ardea golieth,Philippines,Male,57
+886,Boat-billed heron,Cochlearius cochlearius,Vietnam,Genderqueer,74
+887,"Lizard, mexican beaded",Heloderma horridum,China,Male,80
+888,"Deer, roe",Capreolus capreolus,China,Male,14
+889,Red-breasted nuthatch,Sitta canadensis,Russia,Male,42
+890,"Grebe, little",Tachybaptus ruficollis,China,Male,78
+891,"Owl, white-browed",Ninox superciliaris,Turkmenistan,Female,49
+892,White-throated toucan,Ramphastos tucanus,Syria,Female,15
+893,"Baboon, savanna",Papio cynocephalus,Indonesia,Female,99
+894,Blue and yellow macaw,Ara ararauna,Philippines,Female,47
+895,Prairie falcon,Falco mexicanus,United States,Male,12
+896,Verreaux's sifaka,Propithecus verreauxi,China,Female,41
+897,Common pheasant,Phasianus colchicus,Canada,Male,53
+898,"Siskin, yellow-rumped",Carduelis uropygialis,Philippines,Female,79
+899,African black crake,Limnocorax flavirostra,Poland,Male,99
+900,"Waxbill, black-cheeked",Estrilda erythronotos,Indonesia,Male,52
+901,"Macaque, rhesus",Macaca mulatta,Indonesia,Female,5
+902,American woodcock,Scolopax minor,China,Agender,14
+903,"Dove, galapagos",Zenaida galapagoensis,China,Non-binary,26
+904,Common brushtail possum,Trichosurus vulpecula,Belarus,Female,51
+905,White stork,Ciconia ciconia,United Kingdom,Male,52
+906,Topi,Damaliscus lunatus,Poland,Female,38
+907,Pine siskin,Carduelis pinus,Indonesia,Male,88
+908,Marine iguana,Amblyrhynchus cristatus,Albania,Male,100
+909,Common eland,Taurotagus oryx,Indonesia,Female,8
+910,Pied crow,Corvus albus,Philippines,Female,20
+911,Long-billed cockatoo,Cacatua tenuirostris,Argentina,Male,6
+912,"Hornbill, yellow-billed",Tockus flavirostris,Honduras,Male,47
+913,European wild cat,Felis silvestris lybica,China,Male,42
+914,"Snake, western patch-nosed",Salvadora hexalepis,Serbia,Female,18
+915,"Sifaka, verreaux's",Propithecus verreauxi,Indonesia,Female,14
+916,Pied crow,Corvus albus,Ukraine,Female,67
+917,Kalahari scrub robin,Certotrichas paena,Nigeria,Genderfluid,39
+918,"Hawk-eagle, crowned",Spizaetus coronatus,Indonesia,Female,23
+919,Mexican boa,Boa constrictor mexicana,Indonesia,Male,48
+920,Numbat,Myrmecobius fasciatus,Guinea,Female,36
+921,Blue shark,Prionace glauca,Peru,Non-binary,29
+922,White-mantled colobus,Colobus guerza,Moldova,Male,38
+923,"Booby, blue-faced",Sula dactylatra,Sweden,Female,90
+924,Red-tailed phascogale,Phascogale calura,Mexico,Genderqueer,48
+925,"Antelope, sable",Hippotragus niger,China,Male,34
+926,Brown lemur,Lemur fulvus,Thailand,Male,34
+927,"Squirrel, african bush",Paraxerus cepapi,United States,Male,30
+928,Mexican wolf,Canis lupus baileyi,Japan,Male,87
+929,White-tailed deer,Odocoilenaus virginianus,Poland,Male,84
+930,"Cat, native",Dasyurus viverrinus,Ireland,Male,60
+931,"Bird, black-throated butcher",Cracticus nigroagularis,Luxembourg,Male,15
+932,Southern boubou,Laniarius ferrugineus,Ukraine,Male,16
+933,Mouflon,Ovis musimon,Indonesia,Female,45
+934,Springbok,Antidorcas marsupialis,Philippines,Male,8
+935,"Rabbit, eastern cottontail",Sylvilagus floridanus,United States,Genderfluid,50
+936,Leadbeateri's ground hornbill,Bucorvus leadbeateri,Japan,Female,23
+937,"Pheasant, common",Phasianus colchicus,Philippines,Female,67
+938,Reindeer,Rangifer tarandus,Luxembourg,Female,100
+939,Gray rhea,Rhea americana,Brazil,Male,10
+940,"Porcupine, prehensile-tailed",Coendou prehensilis,China,Female,4
+941,Lesser mouse lemur,Microcebus murinus,Sweden,Agender,43
+942,Red and blue macaw,Ara chloroptera,Indonesia,Male,33
+943,Zorilla,Ictonyx striatus,Greece,Male,21
+944,White-fronted bee-eater,Merops bullockoides,China,Male,84
+945,"Tortoise, galapagos",Geochelone elephantopus,Sierra Leone,Female,67
+946,"Lizard, collared",Crotaphytus collaris,China,Female,72
+947,"Skunk, western spotted",Spilogale gracilis,Philippines,Male,32
+948,Brindled gnu,Connochaetus taurinus,China,Polygender,20
+949,"Cat, european wild",Felis silvestris lybica,United States,Female,85
+950,"Starling, superb",Lamprotornis superbus,China,Female,52
+951,Burmese black mountain tortoise,Manouria emys,Indonesia,Female,29
+952,"Sunbird, lesser double-collared",Nectarinia chalybea,Poland,Female,92
+953,"Duck, white-faced whistling",Dendrocygna viduata,Finland,Male,95
+954,"Boa, mexican",Boa constrictor mexicana,Indonesia,Male,90
+955,Rhesus macaque,Macaca mulatta,China,Female,61
+956,Guerza,Colobus guerza,China,Female,84
+957,"Crab, red lava",Graspus graspus,Colombia,Male,50
+958,Clark's nutcracker,Nucifraga columbiana,China,Female,19
+959,Llama,Lama glama,Indonesia,Male,14
+960,Blue-breasted cordon bleu,Uraeginthus angolensis,Tanzania,Female,43
+961,Four-horned antelope,Tetracerus quadricornis,United States,Male,31
+962,Guanaco,Lama guanicoe,China,Female,29
+963,Ground legaan,Varanus sp.,Canada,Male,7
+964,"Marshbird, brown and yellow",Pseudoleistes virescens,Philippines,Male,85
+965,Asian lion,Panthera leo persica,Indonesia,Male,88
+966,"Flamingo, lesser",Phoeniconaias minor,China,Male,81
+967,"Rattlesnake, dusky",Crotalus triseriatus,Palestinian Territory,Female,79
+968,"Cat, miner's",Bassariscus astutus,Russia,Agender,74
+969,"Sandpiper, spotted wood",Tringa glareola,Portugal,Female,86
+970,"Gull, lava",Larus fuliginosus,Bulgaria,Female,41
+971,"Meerkat, red",Cynictis penicillata,Indonesia,Bigender,89
+972,Red kangaroo,Macropus rufus,Venezuela,Male,99
+973,Common dolphin,Delphinus delphis,Indonesia,Female,5
+974,Giant heron,Ardea golieth,China,Polygender,58
+975,Blue wildebeest,Connochaetus taurinus,Philippines,Male,69
+976,Black-backed magpie,Gymnorhina tibicen,Mexico,Female,91
+977,Red-winged hawk (unidentified),unavailable,Poland,Male,1
+978,"Stork, jabiru",Ephippiorhynchus mycteria,Comoros,Female,30
+979,Stanley crane,Anthropoides paradisea,Finland,Male,42
+980,Nelson ground squirrel,Ammospermophilus nelsoni,China,Male,23
+981,Japanese macaque,Macaca fuscata,Vietnam,Male,77
+982,"Eagle, golden",Aquila chrysaetos,Brazil,Female,97
+983,Helmeted guinea fowl,Numida meleagris,Finland,Male,24
+984,Western grey kangaroo,Macropus fuliginosus,Sweden,Female,15
+985,Red-headed woodpecker,Melanerpes erythrocephalus,Qatar,Male,45
+986,"Snake, buttermilk",Coluber constrictor,South Africa,Male,36
+987,Ibex,Capra ibex,Venezuela,Male,61
+988,African wild dog,Lycaon pictus,Pakistan,Female,51
+989,Red-capped cardinal,Paroaria gularis,Iran,Female,83
+990,Spur-winged goose,Plectopterus gambensis,Yemen,Male,92
+991,"Barbet, levaillant's",Trachyphonus vaillantii,Sweden,Male,50
+992,"Crane, wattled",Bugeranus caruncalatus,Czech Republic,Female,72
+993,Grey mouse lemur,Microcebus murinus,China,Male,30
+994,Red and blue macaw,Ara chloroptera,Morocco,Female,96
+995,"Butterfly, canadian tiger swallowtail",Papilio canadensis,Indonesia,Female,49
+996,"Lizard, giant girdled",Cordylus giganteus,Tanzania,Female,14
+997,Galapagos tortoise,Geochelone elephantopus,Argentina,Female,93
+998,Egyptian vulture,Neophron percnopterus,China,Male,9
+999,Grizzly bear,Ursus arctos,Venezuela,Female,89
+1000,Emu,Dromaeus novaehollandiae,Cyprus,Male,19
