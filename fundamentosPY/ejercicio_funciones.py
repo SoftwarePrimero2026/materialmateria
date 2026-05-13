@@ -1,3 +1,7 @@
+# Crear un funcion que se ingresen los datos de una persona, 
+# de los cuales son obligatorios, apellido, nombre y edad (optativo), 
+# pero ademas se debe contemplar y mostrar si se ingreso domicilio como kwargs 
+# (se puede componer de calle, altura, piso, departamento, ciudad y provincia)
 
 def datos_persona():
     return ""
