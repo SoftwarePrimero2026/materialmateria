@@ -1,0 +1,1 @@
+Hola soy un Archivo de texto, estoy aquí para ayudarte a aprender Python. Puedes escribirme cualquier cosa y yo la guardaré para ti. ¡Vamos a empezar!
