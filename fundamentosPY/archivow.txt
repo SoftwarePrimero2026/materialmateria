@@ -1,1 +1,33 @@
-Contenido para el nuevo archivo
+CRUD
+
+C - Create
+R - Read
+U - Update
+D - Delete (Soft Delete)
+
+
+FUCK
+
+F - Find
+U - Update
+C - Create
+K - Kill (Delete)
+
+
+id_cliente
+apellido
+nombre
+dni
+fecha_nacimiento
+email
+delete_at (FECHA DE ELIMINACION, NULL SI NO ESTA ELIMINADO)
+
+El desglose paso a paso del flujo de ejecución de las operaciones es el siguiente:
+FROM / JOIN: El motor identifica las tablas involucradas y unifica los datos. Esta es la base de todo el proceso.
+WHERE: Filtra las filas crudas basándose en condiciones iniciales antes de procesar cualquier agrupación.
+GROUP BY: Agrupa las filas restantes que comparten los mismos valores en columnas específicas.
+HAVING: Filtra los datos después de haber sido agrupados.
+SELECT: Evalúa las expresiones y selecciona las columnas finales que se devolverán.
+DISTINCT: Elimina las filas duplicadas del resultado obtenido.
+ORDER BY: Ordena el conjunto de resultados final de manera ascendente o descendente.
+LIMIT / OFFSET: Limita la cantidad de filas devueltas u omite un número específico de ellas, siendo el último paso antes de entregar el resultado al usuario.
