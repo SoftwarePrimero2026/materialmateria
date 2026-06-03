@@ -56,3 +56,70 @@
 # =============================================================================
 
 # Escribí tu código a partir de aquí:
+
+
+def aprobaron_ambos(a, b):
+    """Devuelve las materias que estan en ambos conjuntos."""
+    return a & b
+
+
+def solo_aprobó(a, b):
+    """Devuelve las materias que aprobo el primer alumno y el segundo no."""
+    return a - b
+
+
+def ninguno_aprobó(a, b, carrera):
+    """Devuelve materias de la carrera que no aprobo ningun alumno."""
+    return set(carrera) - (a | b)
+
+
+def imprimir_lista(materias):
+    """Imprime una lista ordenada de materias."""
+    for materia in sorted(materias):
+        print(f"   · {materia}")
+
+
+def mostrar_comparacion(nombre_a, nombre_b, aprobadas_a, aprobadas_b, materias_carrera):
+    compartidas = aprobaron_ambos(aprobadas_a, aprobadas_b)
+    solo_a = solo_aprobó(aprobadas_a, aprobadas_b)
+    solo_b = solo_aprobó(aprobadas_b, aprobadas_a)
+    ninguna = ninguno_aprobó(aprobadas_a, aprobadas_b, materias_carrera)
+
+    print("======= COMPARADOR DE MATERIAS =======")
+    print(f"Alumno A: {nombre_a}")
+    print(f"Alumno B: {nombre_b}")
+
+    print(f"\nAprobaron ambos ({len(compartidas)}):")
+    imprimir_lista(compartidas)
+
+    print(f"\nSolo aprobo {nombre_a} ({len(solo_a)}):")
+    imprimir_lista(solo_a)
+
+    print(f"\nSolo aprobo {nombre_b} ({len(solo_b)}):")
+    imprimir_lista(solo_b)
+
+    print(f"\nNinguno aprobo aun ({len(ninguna)}):")
+    imprimir_lista(ninguna)
+    print("======================================")
+
+
+def main():
+    materias_carrera = [
+        "Matemática I",
+        "Programación I",
+        "Física I",
+        "Química",
+        "Sistemas Operativos",
+        "Redes",
+        "Base de Datos",
+        "Inglés Técnico",
+    ]
+
+    aprobadas_a = {"Matemática I", "Programación I", "Física I", "Base de Datos"}
+    aprobadas_b = {"Matemática I", "Programación I", "Química", "Inglés Técnico"}
+
+    mostrar_comparacion("Lucía Torres", "Martín López", aprobadas_a, aprobadas_b, materias_carrera)
+
+
+if __name__ == "__main__":
+    main()

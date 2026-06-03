@@ -40,3 +40,91 @@
 # =============================================================================
 
 # Escribí tu código a partir de aquí:
+
+
+def agregar_contacto(agenda):
+    """Pide los datos y guarda el contacto en el diccionario."""
+    nombre = input("Nombre: ").strip()
+
+    if nombre in agenda:
+        print("Ese contacto ya existe.")
+        return
+
+    telefono = input("Teléfono: ").strip()
+    correo = input("Correo: ").strip()
+    agenda[nombre] = (telefono, correo)
+    print("Contacto agregado correctamente.")
+
+
+def buscar_contacto(agenda, nombre):
+    """Busca un contacto por nombre y muestra sus datos."""
+    if nombre in agenda:
+        telefono, correo = agenda[nombre]
+        print(f"Nombre: {nombre}")
+        print(f"Teléfono: {telefono}")
+        print(f"Correo: {correo}")
+    else:
+        print("No se encontro ese contacto.")
+
+
+def eliminar_contacto(agenda):
+    """Pide un nombre y lo elimina si existe."""
+    nombre = input("Nombre a eliminar: ").strip()
+
+    if nombre in agenda:
+        del agenda[nombre]
+        print("Contacto eliminado.")
+    else:
+        print("No se encontro ese contacto.")
+
+
+def listar_contactos(agenda):
+    """Imprime todos los contactos en columnas alineadas."""
+    if not agenda:
+        print("Todavia no hay contactos cargados.")
+        return
+
+    print("\n=========== AGENDA DE CONTACTOS ===========")
+    print(f"{'Nombre':<20}{'Teléfono':<16}{'Correo'}")
+    print("-------------------------------------------")
+
+    for nombre, datos in sorted(agenda.items()):
+        telefono, correo = datos
+        print(f"{nombre:<20}{telefono:<16}{correo}")
+
+    print("===========================================")
+    print(f"Total: {len(agenda)} contactos")
+
+
+def mostrar_menu():
+    print("\n1. Agregar contacto")
+    print("2. Buscar contacto")
+    print("3. Eliminar contacto")
+    print("4. Listar contactos")
+    print("5. Salir")
+
+
+def main():
+    agenda = {}
+
+    while True:
+        mostrar_menu()
+        opcion = input("Elegí una opcion: ")
+
+        if opcion == "1":
+            agregar_contacto(agenda)
+        elif opcion == "2":
+            nombre = input("Nombre a buscar: ").strip()
+            buscar_contacto(agenda, nombre)
+        elif opcion == "3":
+            eliminar_contacto(agenda)
+        elif opcion == "4":
+            listar_contactos(agenda)
+        elif opcion == "5":
+            break
+        else:
+            print("Opcion invalida. Probá nuevamente.")
+
+
+if __name__ == "__main__":
+    main()
