@@ -7,7 +7,7 @@ USUARIOS_DEMO = {
 }
 
 
-def validar_login(usuario, clave):
+def validar_login(clave, usuario="admin"):
     """Valida credenciales y devuelve (ok, mensaje)."""
     usuario = usuario.strip().lower()
     clave = clave.strip()
