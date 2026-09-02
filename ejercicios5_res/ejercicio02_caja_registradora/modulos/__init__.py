@@ -1,0 +1,1 @@
+"""Módulos de soporte para el Ejercicio 2 - Caja registradora."""
