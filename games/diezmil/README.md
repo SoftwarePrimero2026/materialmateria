@@ -15,18 +15,63 @@ dados para garantizar que puntúan idéntico.
 
 ---
 
+## Cómo ejecutarlo (lo más rápido)
+
+Hay un lanzador para cada sistema. **Si Godot no está instalado, el lanzador lo
+descarga solo la primera vez** dentro de `.godot-bin/`, así que no hace falta
+instalar nada a mano.
+
+**Linux:**
+
+```bash
+cd games/diezmil
+./ejecutar.sh
+```
+
+**Windows:**
+
+```
+ejecutar.bat            (doble clic, o desde la consola)
+```
+
+Ambos aceptan las mismas opciones:
+
+| Opción | Qué hace |
+|---|---|
+| *(sin nada)* | Lanza el juego |
+| `--editor` | Abre el proyecto en el editor de Godot |
+| `--tests` | Corre todos los tests |
+| `--python` | Corre la versión de consola (Python) |
+| `--ayuda` | Muestra la ayuda |
+
+Si ya tenés Godot instalado en otro lado y no querés que lo descargue, se le
+puede indicar la ruta:
+
+```bash
+# Linux
+GODOT_BIN=/ruta/a/godot ./ejecutar.sh
+
+# Windows
+set GODOT_BIN=C:\ruta\a\Godot.exe
+ejecutar.bat
+```
+
+---
+
 ## Archivos
 
 ```
 games/diezmil/
 ├── README.md               Este archivo
+├── ejecutar.sh             Lanzador para Linux (descarga Godot si falta)
+├── ejecutar.bat            Lanzador para Windows (descarga Godot si falta)
 ├── diezmil.md              Reglas del juego (documento original de clase)
 ├── reglas10000.py          Motor de reglas en Python (sin interfaz)
 ├── test_reglas10000.py     45 tests del motor Python
 ├── diezmil.py              Juego por consola (humano y bots)
 ├── diezmil_original.py.bak Versión original de clase (con los bugs, para comparar)
 ├── generar_fixtures.py     Genera el JSON de 46.656 tiradas para el test de paridad
-├── correr_tests.sh         Corre todas las suites
+├── correr_tests.sh         Corre todas las suites (Linux)
 └── diezmil_godot/          Proyecto Godot 4
     ├── project.godot
     ├── icon.svg
