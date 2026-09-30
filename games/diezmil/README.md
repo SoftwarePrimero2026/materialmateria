@@ -18,7 +18,8 @@ dados para garantizar que puntúan idéntico.
 ## Archivos
 
 ```
-games/
+games/diezmil/
+├── README.md               Este archivo
 ├── diezmil.md              Reglas del juego (documento original de clase)
 ├── reglas10000.py          Motor de reglas en Python (sin interfaz)
 ├── test_reglas10000.py     45 tests del motor Python
@@ -88,7 +89,7 @@ también en el código):
 ## Cómo correr la versión Python
 
 ```bash
-cd games
+cd games/diezmil
 
 python3 diezmil.py                 # partida interactiva de 2 jugadores
 python3 diezmil.py -j 3            # 3 jugadores
@@ -106,7 +107,7 @@ posibles y pide los **índices** de los dados a separar (`0,1,3`) o `auto`.
 Requiere **Godot 4.x**. Con el binario en el PATH:
 
 ```bash
-cd games/diezmil_godot
+cd games/diezmil/diezmil_godot
 
 godot --path . --editor     # abrir en el editor
 godot --path .              # jugar
@@ -136,7 +137,7 @@ chmod +x Godot_v4.7.2-stable_linux.x86_64
 Todo se corre con un solo comando:
 
 ```bash
-cd games
+cd games/diezmil
 ./correr_tests.sh          # Python + Godot headless + UI
 ./correr_tests.sh python   # solo el motor Python
 ./correr_tests.sh godot    # solo los tests headless de Godot
