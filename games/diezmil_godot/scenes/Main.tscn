@@ -1,0 +1,123 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdiezmilmain1"]
+
+[ext_resource type="Script" path="res://src/juego.gd" id="1_juego"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_juego")
+
+[node name="Fondo" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.09, 0.11, 0.16, 1)
+
+[node name="Margen" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 20
+
+[node name="Columnas" type="HBoxContainer" parent="Margen"]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="Izquierda" type="VBoxContainer" parent="Margen/Columnas"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 12
+
+[node name="Titulo" type="Label" parent="Margen/Columnas/Izquierda"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Juego de dados 10.000"
+
+[node name="LblTurno" type="Label" parent="Margen/Columnas/Izquierda"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Turno de: —"
+
+[node name="LblMesa" type="Label" parent="Margen/Columnas/Izquierda"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = "Dados en mesa: (ninguno)"
+
+[node name="FilaDados" type="HBoxContainer" parent="Margen/Columnas/Izquierda"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="LblRonda" type="Label" parent="Margen/Columnas/Izquierda"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Puntos de la ronda: 0"
+
+[node name="LblLecturas" type="Label" parent="Margen/Columnas/Izquierda"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 14
+text = "Lecturas posibles:"
+
+[node name="LblMensaje" type="Label" parent="Margen/Columnas/Izquierda"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 16
+autowrap_mode = 3
+text = "Tira los 6 dados para empezar el turno."
+
+[node name="Botones" type="HBoxContainer" parent="Margen/Columnas/Izquierda"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="BtnTirar" type="Button" parent="Margen/Columnas/Izquierda/Botones"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(220, 48)
+layout_mode = 2
+text = "Tirar dados"
+
+[node name="BtnSeguir" type="Button" parent="Margen/Columnas/Izquierda/Botones"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(220, 48)
+layout_mode = 2
+text = "Separar seleccionados"
+
+[node name="BtnPlantar" type="Button" parent="Margen/Columnas/Izquierda/Botones"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(180, 48)
+layout_mode = 2
+text = "Plantarse"
+
+[node name="BtnNueva" type="Button" parent="Margen/Columnas/Izquierda/Botones"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(200, 48)
+layout_mode = 2
+text = "Nueva partida"
+
+[node name="Derecha" type="VBoxContainer" parent="Margen/Columnas"]
+custom_minimum_size = Vector2(340, 0)
+layout_mode = 2
+
+[node name="LblMarcador" type="Label" parent="Margen/Columnas/Derecha"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 16
+text = "Marcador:"

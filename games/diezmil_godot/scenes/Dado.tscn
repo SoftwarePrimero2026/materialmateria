@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdiezmil1dado"]
+
+[ext_resource type="Script" path="res://src/dado.gd" id="1_dado"]
+
+[node name="Dado" type="Button"]
+custom_minimum_size = Vector2(110, 140)
+offset_right = 110.0
+offset_bottom = 140.0
+focus_mode = 0
+script = ExtResource("1_dado")

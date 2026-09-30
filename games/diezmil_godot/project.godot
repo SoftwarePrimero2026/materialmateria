@@ -1,0 +1,36 @@
+; Engine configuration file.
+; Proyecto: DiezMil — juego de dados 10.000 (material de IntroProgramacion)
+;
+; Abrir con: godot --path diezmil_godot --editor
+; Correr:    godot --path diezmil_godot
+
+config_version=5
+
+[application]
+
+config/name="DiezMil (10.000)"
+config/description="Juego de dados 10.000 — material de clase de IntroProgramacion"
+run/main_scene="res://scenes/Main.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+config/icon="res://icon.svg"
+
+[autoload]
+
+Estado="*res://src/estado.gd"
+
+[display]
+
+window/size/viewport_width=1152
+window/size/viewport_height=648
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/canvas_textures/default_texture_filter=0
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=false

@@ -1,0 +1,22 @@
+# Godot 4+ project files
+.godot/
+.import/
+export.cfg
+export_presets.cfg
+*.translation
+
+# Godot-specific ignores
+.gdignore
+
+# Exportar
+build/
+*.pck
+*.zip
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Python (para los scripts de fixtures)
+__pycache__/
+*.py[cod]
