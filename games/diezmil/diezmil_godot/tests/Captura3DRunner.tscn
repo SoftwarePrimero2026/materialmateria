@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdiezmilcap3d1"]
+
+[ext_resource type="Script" path="res://tests/capturar_3d.gd" id="1_cap3d"]
+
+[node name="Captura3DRunner" type="Node"]
+script = ExtResource("1_cap3d")

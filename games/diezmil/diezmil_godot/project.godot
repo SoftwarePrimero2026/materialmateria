@@ -25,6 +25,16 @@ window/size/viewport_height=648
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 
+[physics]
+
+# Mas iteraciones y pasos de fisica mas finos: los dados ruedan rapido y con
+# la configuracion por defecto atravesaban la mesa por tunneling.
+3d/default_gravity=9.8
+common/physics_ticks_per_second=120
+3d/solver/solver_iterations=16
+3d/solver/contact_recycle_radius=0.005
+3d/solver/default_contact_bias=0.9
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"

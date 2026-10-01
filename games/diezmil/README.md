@@ -1,17 +1,18 @@
 # Juego de dados 10.000
 
 Material de clase de **Introducción a la Programación**. Implementación completa
-del juego de dados 10.000 en dos versiones que comparten exactamente las mismas
-reglas:
+del juego de dados 10.000, con **tres versiones que comparten exactamente las
+mismas reglas**:
 
 | Versión | Archivo | Para qué sirve |
 |---|---|---|
 | **Python (consola)** | `diezmil.py` | Ver la lógica pura, jugar por terminal, simular partidas |
-| **Godot 4 (ventana)** | `diezmil_godot/` | Versión gráfica con dados clicables y marcador |
+| **Godot 2D** | `diezmil_godot/scenes/Main.tscn` | Versión gráfica simple: los dados son botones |
+| **Godot 3D** | `diezmil_godot/scenes/Main3D.tscn` | Dados 3D reales que ruedan con física, sobre una mesa |
 
-El **motor de reglas** está separado de la interfaz en ambas versiones, y hay un
-test que compara los dos motores contra **las 46.656 tiradas posibles** de 6
-dados para garantizar que puntúan idéntico.
+El **motor de reglas** está separado de la interfaz en todas las versiones, y hay
+un test que compara los motores Python y GDScript contra **las 46.656 tiradas
+posibles** de 6 dados para garantizar que puntúan idéntico.
 
 ---
 
@@ -25,20 +26,23 @@ instalar nada a mano.
 
 ```bash
 cd games/diezmil
-./ejecutar.sh
+./ejecutar.sh              # juego 3D (dados que ruedan)
+./ejecutar.sh --2d         # variante 2D
 ```
 
 **Windows:**
 
 ```
-ejecutar.bat            (doble clic, o desde la consola)
+ejecutar.bat               (doble clic, o desde la consola)
+ejecutar.bat --2d
 ```
 
 Ambos aceptan las mismas opciones:
 
 | Opción | Qué hace |
 |---|---|
-| *(sin nada)* | Lanza el juego |
+| *(sin nada)* | Lanza el juego 3D (dados con física real) |
+| `--2d` | Lanza la variante 2D (dados planos) |
 | `--editor` | Abre el proyecto en el editor de Godot |
 | `--tests` | Corre todos los tests |
 | `--python` | Corre la versión de consola (Python) |
@@ -58,6 +62,37 @@ ejecutar.bat
 
 ---
 
+## Los dados 3D (generados con Blender)
+
+Los dados de la versión 3D **no son modelos descargados**: se generan con un
+script de Blender incluido, que crea el dado con sus pipas exactas y lo exporta
+a `dado.glb`.
+
+```bash
+cd games/diezmil/herramientas
+blender -b --python generar_dados_blender.py            # modelo + las 6 caras
+blender -b --python generar_dados_blender.py -- --solo-glb    # solo el .glb
+blender -b --python generar_dados_blender.py -- --solo-caras  # solo los PNG
+```
+
+Requiere Blender 4.x o superior (probado con 5.2). El script:
+
+- Crea un cubo con **bordes biselados** y las **21 pipas como geometría real**
+  (no son una textura), en las posiciones estándar: las caras opuestas suman 7.
+- Pone un **marcador invisible por cara** (`cara_1` .. `cara_6`). Godot busca
+  cuál de esos marcadores queda con la mayor componente Y global tras la
+  tirada: **ese es el valor que salió**. Verificarlo así en tiempo de ejecución
+  evita depender del cambio de ejes entre Blender (Z-up) y Godot (Y-up).
+- Renderiza también las 6 caras a PNG (512×512) por si se quieren usar como
+  textura o vista previa, con iluminación relativa a la cámara para que las seis
+  queden parejas.
+
+Para saber qué cara salió, la alternativa a los marcadores sería deducir la
+orientación del cuerpo; está implementada como respaldo, pero los marcadores son
+más robustos.
+
+---
+
 ## Archivos
 
 ```
@@ -72,12 +107,19 @@ games/diezmil/
 ├── diezmil_original.py.bak Versión original de clase (con los bugs, para comparar)
 ├── generar_fixtures.py     Genera el JSON de 46.656 tiradas para el test de paridad
 ├── correr_tests.sh         Corre todas las suites (Linux)
+├── herramientas/
+│   └── generar_dados_blender.py   Genera el dado 3D y las caras con Blender
 └── diezmil_godot/          Proyecto Godot 4
     ├── project.godot
     ├── icon.svg
+    ├── assets/dados/
+    │   ├── dado.glb        Modelo 3D del dado (generado)
+    │   └── cara_1..6.png   Las 6 caras renderizadas (generadas)
     ├── scenes/
-    │   ├── Main.tscn       Pantalla principal
-    │   └── Dado.tscn       Un dado clicable
+    │   ├── Main.tscn       Pantalla principal 2D
+    │   ├── Dado.tscn       Un dado clicable 2D
+    │   ├── Main3D.tscn     Mesa 3D con dados que ruedan
+    │   └── Dado3D.tscn     Un dado 3D con física
     ├── src/
     │   ├── reglas.gd       Motor de reglas (espejo de reglas10000.py)
     │   ├── estado.gd       Marcador y jugadores (autoload `Estado`)

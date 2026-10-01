@@ -66,9 +66,10 @@ DADOS = 6
 def valor_grupo(cara, cantidad):
     """Puntaje de `cantidad` dados iguales de `cara`.
 
-    Devuelve None si no alcanzan para un trío (menos de 3 dados).
+    Devuelve None si no alcanzan para un trío (menos de 3 dados) o si la cara
+    no es válida (fuera de 1-6).
     """
-    if cantidad < 3:
+    if cantidad < 3 or cara not in VALOR_TRIO:
         return None
     base = VALOR_TRIO[cara]
     # Cada dado extra por encima del trío duplica el valor anterior.

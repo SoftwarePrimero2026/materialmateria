@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdiezmilres1"]
+
+[ext_resource type="Script" path="res://tests/test_resaltado.gd" id="1_res"]
+
+[node name="ResaltadoRunner" type="Node"]
+script = ExtResource("1_res")

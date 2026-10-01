@@ -46,8 +46,11 @@ static func contar(tirada: Array) -> Dictionary:
 
 
 ## Puntaje de `cantidad` dados iguales de `cara`; 0 si no llegan a trio.
+##
+## Tolera caras fuera de 1-6 (por ejemplo un dado que todavia no se detuvo y
+## tiene valor 0): en ese caso devuelve 0 en vez de fallar.
 static func valor_grupo(cara: int, cantidad: int) -> int:
-	if cantidad < 3:
+	if cantidad < 3 or not VALOR_TRIO.has(cara):
 		return 0
 	# Cada dado extra por encima del trio duplica el valor anterior.
 	return int(VALOR_TRIO[cara]) * (1 << (cantidad - 3))

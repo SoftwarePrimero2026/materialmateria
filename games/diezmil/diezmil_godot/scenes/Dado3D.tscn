@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://bdiezmildado3d"]
+
+[ext_resource type="Script" path="res://src/dado3d.gd" id="1_dado3d"]
+[ext_resource type="PackedScene" path="res://assets/dados/dado.glb" id="2_glb"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dado"]
+size = Vector3(1.02, 1.02, 1.02)
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_dado"]
+friction = 0.55
+bounce = 0.22
+
+[node name="Dado3D" type="RigidBody3D"]
+mass = 0.6
+physics_material_override = SubResource("PhysicsMaterial_dado")
+continuous_cd = true
+contact_monitor = true
+max_contacts_reported = 8
+script = ExtResource("1_dado3d")
+
+[node name="Colision" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_dado")
+
+[node name="Modelo" parent="." instance=ExtResource("2_glb")]

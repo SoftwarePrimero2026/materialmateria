@@ -4,8 +4,8 @@
 # Uso:
 #   ./correr_tests.sh            # todo
 #   ./correr_tests.sh python     # solo Python
-#   ./correr_tests.sh godot      # solo Godot headless (reglas + partidas)
-#   ./correr_tests.sh ui         # solo la UI (requiere xvfb o display)
+#   ./correr_tests.sh godot      # solo Godot headless (reglas + partidas + dado 3D)
+#   ./correr_tests.sh ui         # solo las suites que necesitan pantalla
 #
 # Requiere: python3 y una copia de Godot 4.x. Define GODOT_BIN para apuntar
 # al binario (por defecto se busca en ~/godot y en el PATH).
@@ -31,6 +31,29 @@ fi
 fallos=0
 que="${1:-todo}"
 
+# Corre una suite headless (con --script) y suma el fallo si sale distinto de 0.
+suite_headless() {
+  local titulo="$1" script="$2"
+  echo
+  echo "--- $titulo ---"
+  "$GODOT_BIN" --headless --path "$PROYECTO" --script "$script" 2>&1 | tail -4
+  [[ ${PIPESTATUS[0]} -eq 0 ]] || fallos=$((fallos + 1))
+}
+
+# Corre una suite que necesita pantalla (runner de escena). Usa xvfb si esta.
+suite_escena() {
+  local titulo="$1" escena="$2"
+  echo
+  echo "--- $titulo ---"
+  if command -v xvfb-run >/dev/null 2>&1; then
+    xvfb-run -a --server-args="-screen 0 1280x800x24" \
+        "$GODOT_BIN" --path "$PROYECTO" "$escena" 2>&1 | tail -4
+  else
+    "$GODOT_BIN" --path "$PROYECTO" "$escena" 2>&1 | tail -4
+  fi
+  [[ ${PIPESTATUS[0]} -eq 0 ]] || fallos=$((fallos + 1))
+}
+
 echo "=========================================================="
 echo " TESTS DEL JUEGO DE DADOS 10.000"
 echo "=========================================================="
@@ -49,17 +72,10 @@ if [[ "$que" == "todo" || "$que" == "godot" ]]; then
     echo "    Define GODOT_BIN=/ruta/a/godot para correrlos."
     fallos=$((fallos + 1))
   else
-    echo
-    echo "--- Godot: paridad con Python (46656 tiradas) ---"
-    "$GODOT_BIN" --headless --path "$PROYECTO" \
-        --script res://tests/test_paridad.gd 2>&1 | tail -4
-    [[ ${PIPESTATUS[0]} -eq 0 ]] || fallos=$((fallos + 1))
-
-    echo
-    echo "--- Godot: partidas completas (300) ---"
-    "$GODOT_BIN" --headless --path "$PROYECTO" \
-        --script res://tests/test_partida.gd 2>&1 | tail -4
-    [[ ${PIPESTATUS[0]} -eq 0 ]] || fallos=$((fallos + 1))
+    suite_headless "Godot: paridad con Python (46656 tiradas)" \
+        "res://tests/test_paridad.gd"
+    suite_headless "Godot: partidas completas (300)" \
+        "res://tests/test_partida.gd"
   fi
 fi
 
@@ -68,15 +84,14 @@ if [[ "$que" == "todo" || "$que" == "ui" ]]; then
     echo
     echo "--- UI: OMITIDA (no se encontro el binario de Godot) ---"
   else
-    echo
-    echo "--- Godot: end-to-end de la UI ---"
-    if command -v xvfb-run >/dev/null 2>&1; then
-      xvfb-run -a --server-args="-screen 0 1280x800x24" \
-          "$GODOT_BIN" --path "$PROYECTO" res://tests/E2ERunner.tscn 2>&1 | tail -4
-    else
-      "$GODOT_BIN" --path "$PROYECTO" res://tests/E2ERunner.tscn 2>&1 | tail -4
-    fi
-    [[ ${PIPESTATUS[0]} -eq 0 ]] || fallos=$((fallos + 1))
+    suite_escena "Godot: modelo del dado 3D y deteccion de cara" \
+        "res://tests/Dado3DRunner.tscn"
+    suite_escena "Godot: resaltado de seleccion" \
+        "res://tests/ResaltadoRunner.tscn"
+    suite_escena "Godot: end-to-end de la UI 2D" \
+        "res://tests/E2ERunner.tscn"
+    suite_escena "Godot: prueba de humo de la escena 3D" \
+        "res://tests/Juego3DRunner.tscn"
   fi
 fi
 

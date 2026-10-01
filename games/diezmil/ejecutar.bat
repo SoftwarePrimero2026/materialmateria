@@ -65,6 +65,8 @@ if /i "%MODO%"=="editor"   goto :editor
 if /i "%MODO%"=="juego"    goto :juego
 if /i "%MODO%"=="--juego"  goto :juego
 if /i "%MODO%"=="-j"       goto :juego
+if /i "%MODO%"=="--2d"     goto :juego2d
+if /i "%MODO%"=="2d"       goto :juego2d
 
 echo   XX Opcion desconocida: %MODO%
 echo.
@@ -169,7 +171,7 @@ REM  Modos
 REM ===========================================================================
 :juego
 echo.
-echo ==^> Lanzando el juego...
+echo ==^> Lanzando el juego 3D ^(dados con fisica real^)...
 echo      Proyecto: %PROYECTO%
 echo.
 echo   Controles: clic en los dados para seleccionarlos,
@@ -177,6 +179,14 @@ echo              "Separar seleccionados" suma los puntos,
 echo              "Volver a tirar" relanza, "Plantarse" cierra el turno.
 echo.
 "%GODOT%" --path "%PROYECTO%"
+goto :fin
+
+:juego2d
+echo.
+echo ==^> Lanzando la variante 2D ^(dados planos^)...
+echo      Proyecto: %PROYECTO%
+echo.
+"%GODOT%" --path "%PROYECTO%" res://scenes/Main.tscn
 goto :fin
 
 :editor
@@ -259,7 +269,8 @@ echo  Juego de dados 10.000 - Lanzador (Windows)
 echo ============================================================================
 echo.
 echo  Uso:
-echo    ejecutar.bat              Lanza el juego (ventana)
+echo    ejecutar.bat              Lanza el juego 3D (dados con fisica real)
+echo    ejecutar.bat --2d         Lanza la variante 2D (dados planos)
 echo    ejecutar.bat --editor     Abre el proyecto en el editor de Godot
 echo    ejecutar.bat --tests      Corre todos los tests
 echo    ejecutar.bat --python     Version de consola (Python)

@@ -173,15 +173,27 @@ correr_godot() {
 
 
 # --- Modos -----------------------------------------------------------------
+# Lanza el juego. `variante` puede ser "3d" (dados con fisica real, por
+# defecto) o "2d" (los dados son botones planos).
 modo_juego() {
-  info "Lanzando el juego..."
+  local variante="${1:-3d}"
+  local escena=""
+  if [[ "$variante" == "2d" ]]; then
+    escena="res://scenes/Main.tscn"
+  fi
+
+  info "Lanzando el juego (variante $variante)..."
   echo "     Proyecto: $PROYECTO"
   echo
   echo "  Controles: clic en los dados para seleccionarlos,"
   echo "             'Separar seleccionados' suma los puntos,"
   echo "             'Volver a tirar' relanza, 'Plantarse' cierra el turno."
   echo
-  correr_godot --path "$PROYECTO"
+  if [[ -n "$escena" ]]; then
+    correr_godot --path "$PROYECTO" "$escena"
+  else
+    correr_godot --path "$PROYECTO"
+  fi
 }
 
 modo_editor() {
@@ -218,7 +230,8 @@ ayuda() {
 ============================================================================
 
  Uso:
-   ./ejecutar.sh              Lanza el juego (ventana)
+   ./ejecutar.sh              Lanza el juego 3D (dados con fisica real)
+   ./ejecutar.sh --2d         Lanza la variante 2D (dados planos)
    ./ejecutar.sh --editor     Abre el proyecto en el editor de Godot
    ./ejecutar.sh --tests      Corre todos los tests
    ./ejecutar.sh --python     Version de consola (Python)
@@ -267,7 +280,14 @@ main() {
       if ! detectar_godot; then
         descargar_godot || exit 1
       fi
-      modo_juego
+      modo_juego 3d
+      exit $?
+      ;;
+    --2d|2d)
+      if ! detectar_godot; then
+        descargar_godot || exit 1
+      fi
+      modo_juego 2d
       exit $?
       ;;
     *)
