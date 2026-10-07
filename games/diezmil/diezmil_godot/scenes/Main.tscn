@@ -114,10 +114,17 @@ text = "Nueva partida"
 [node name="Derecha" type="VBoxContainer" parent="Margen/Columnas"]
 custom_minimum_size = Vector2(340, 0)
 layout_mode = 2
+theme_override_constants/separation = 8
 
 [node name="LblMarcador" type="Label" parent="Margen/Columnas/Derecha"]
 unique_name_in_owner = true
 layout_mode = 2
-size_flags_vertical = 3
+size_flags_vertical = 1
 theme_override_font_sizes/font_size = 16
 text = "Marcador:"
+
+[node name="BtnReset" type="Button" parent="Margen/Columnas/Derecha"]
+unique_name_in_owner = true
+layout_mode = 2
+tooltip_text = "Pone todos los marcadores en 0 y empieza una partida nueva"
+text = "Reset de Partida"

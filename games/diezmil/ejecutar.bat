@@ -178,7 +178,7 @@ echo   Controles: clic en los dados para seleccionarlos,
 echo              "Separar seleccionados" suma los puntos,
 echo              "Volver a tirar" relanza, "Plantarse" cierra el turno.
 echo.
-"%GODOT%" --path "%PROYECTO%"
+"%GODOT%" --path "%PROYECTO%" res://scenes/Main3D.tscn
 goto :fin
 
 :juego2d

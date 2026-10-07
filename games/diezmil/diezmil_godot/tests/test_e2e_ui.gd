@@ -138,6 +138,10 @@ func _ready() -> void:
 	print("--- Cambio de turno ---")
 	_assert_eq(Estado.turno, (idx_jugador + 1) % 2, "el turno pasa al otro")
 	_assert(btn_tirar.visible, "el nuevo turno arranca con el boton Tirar")
+	# Regla: al plantarse, el siguiente jugador recibe todos los dados y los
+	# vuelve a tirar. en_mesa vacio = el primer tiro reparte los 6.
+	_assert(main.en_mesa.is_empty(),
+			"al plantarse, el turno siguiente arranca con los 6 dados")
 
 	# --- 7) Partida completa por UI hasta que haya ganador ---
 	print("--- Partida completa por UI ---")
@@ -173,6 +177,8 @@ func _ready() -> void:
 	_assert(ganador >= 0, "hay un jugador que alcanzo el objetivo")
 	var btn_nueva: Button = main.get_node("%BtnNueva")
 	_assert(btn_nueva.visible, "se ve el boton Nueva partida al ganar")
+	_assert(not main.get_node("%BtnReset").visible,
+			"al ganar el Reset se esconde (ya esta Nueva partida)")
 	print("  Ganador: %s con %d puntos (%d turnos por UI)"
 			% [Estado.jugadores[ganador], Estado.totales[ganador], turnos])
 
@@ -184,6 +190,28 @@ func _ready() -> void:
 	_assert_eq(Estado.totales[0], 0, "el marcador se resetea")
 	_assert_eq(Estado.totales[1], 0, "el marcador se resetea")
 	_assert(main.fase == INICIO, "la nueva partida arranca en INICIO")
+
+	# --- 9) Reset de partida (confirmacion en dos clics) ---
+	print("--- Reset de partida ---")
+	var btn_reset: Button = main.get_node("%BtnReset")
+	_assert(btn_reset.visible, "durante la partida se ve el boton Reset")
+
+	Estado.totales[0] = 1234
+	Estado.totales[1] = 567
+	btn_reset.pressed.emit()
+	await get_tree().process_frame
+	_assert(main.reset_armado, "el primer clic arma el reset")
+	_assert_eq(btn_reset.text, "¿Seguro?", "el primer clic pide confirmacion")
+	_assert(int(Estado.totales[0]) != 0,
+			"el primer clic NO borra el marcador")
+
+	btn_reset.pressed.emit()
+	await get_tree().process_frame
+	_assert(not main.reset_armado, "el segundo clic desarma el reset")
+	_assert_eq(btn_reset.text, "Reset de Partida", "el boton vuelve a su texto")
+	_assert_eq(Estado.totales[0], 0, "el segundo clic pone el marcador en 0")
+	_assert_eq(Estado.totales[1], 0, "el segundo clic pone el marcador en 0")
+	_assert(main.fase == INICIO, "el reset arranca una partida nueva")
 
 	print("")
 	print("Chequeos: %d | Fallos: %d" % [chequeos, fallos])

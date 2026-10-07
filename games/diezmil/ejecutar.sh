@@ -177,7 +177,10 @@ correr_godot() {
 # defecto) o "2d" (los dados son botones planos).
 modo_juego() {
   local variante="${1:-3d}"
-  local escena=""
+  # Se pasa la escena SIEMPRE, sin depender de run/main_scene del proyecto:
+  # si no se indica escena, Godot abre la escena principal y podria no ser
+  # la que el usuario esperaba.
+  local escena="res://scenes/Main3D.tscn"
   if [[ "$variante" == "2d" ]]; then
     escena="res://scenes/Main.tscn"
   fi

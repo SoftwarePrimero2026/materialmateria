@@ -62,7 +62,8 @@ func _ready() -> void:
 
 	# Verificar visibilidad de botones por fase.
 	print("--- Botones ---")
-	for nombre in ["%BtnTirar", "%BtnSeguir", "%BtnPlantar", "%BtnNueva"]:
+	for nombre in ["%BtnTirar", "%BtnSeguir", "%BtnPlantar", "%BtnNueva",
+			"%BtnReset"]:
 		var b := main.get_node_or_null(nombre)
 		if b:
 			print("  %-14s visible=%s" % [nombre, b.visible])

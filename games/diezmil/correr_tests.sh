@@ -92,6 +92,8 @@ if [[ "$que" == "todo" || "$que" == "ui" ]]; then
         "res://tests/E2ERunner.tscn"
     suite_escena "Godot: prueba de humo de la escena 3D" \
         "res://tests/Juego3DRunner.tscn"
+    suite_escena "Godot: camara orbital (orbita, limites, arrastre vs clic)" \
+        "res://tests/CamaraRunner.tscn"
   fi
 fi
 

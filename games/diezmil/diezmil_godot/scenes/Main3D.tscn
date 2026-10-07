@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bdiezmilmain3d"]
+[gd_scene load_steps=12 format=3 uid="uid://bdiezmilmain3d"]
 
 [ext_resource type="Script" path="res://src/juego3d.gd" id="1_juego3d"]
 
@@ -47,15 +47,30 @@ content_margin_top = 12.0
 content_margin_right = 16.0
 content_margin_bottom = 12.0
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_panel_info"]
+bg_color = Color(0.06, 0.07, 0.11, 0.9)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+content_margin_left = 8.0
+content_margin_top = 6.0
+content_margin_right = 8.0
+content_margin_bottom = 6.0
+
 [node name="Main3D" type="Node3D"]
 script = ExtResource("1_juego3d")
 
 [node name="Mundo" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_mesa")
 
-[node name="Camara" type="Camera3D" parent="."]
+[node name="SoporteCamara" type="Node3D" parent="."]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 0.809, 0.588, 0, -0.588, 0.809, 0, 6.4, 7.2)
+transform = Transform3D(1, 0, 0, 0, 0.8, 0.6, 0, -0.6, 0.8, 0, 1, 0)
+
+[node name="Camara" type="Camera3D" parent="SoporteCamara"]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 9)
 fov = 40.0
 
 [node name="LuzPrincipal" type="DirectionalLight3D" parent="."]
@@ -136,68 +151,73 @@ anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
 offset_left = 24.0
-offset_top = -262.0
-offset_right = 640.0
+offset_top = -141.0
+offset_right = 332.0
 offset_bottom = -20.0
 grow_vertical = 0
-theme_override_styles/panel = SubResource("StyleBoxFlat_panel")
+theme_override_styles/panel = SubResource("StyleBoxFlat_panel_info")
 
 [node name="Col" type="VBoxContainer" parent="HUD/PanelIzq"]
 layout_mode = 2
-theme_override_constants/separation = 8
+theme_override_constants/separation = 4
 
 [node name="LblTurno" type="Label" parent="HUD/PanelIzq/Col"]
 unique_name_in_owner = true
 layout_mode = 2
-theme_override_font_sizes/font_size = 22
+theme_override_font_sizes/font_size = 11
 text = "Turno de: —"
 
 [node name="LblRonda" type="Label" parent="HUD/PanelIzq/Col"]
 unique_name_in_owner = true
 layout_mode = 2
-theme_override_font_sizes/font_size = 20
+theme_override_font_sizes/font_size = 10
 text = "Puntos de la ronda: 0"
 
 [node name="LblLecturas" type="Label" parent="HUD/PanelIzq/Col"]
 unique_name_in_owner = true
 layout_mode = 2
-theme_override_font_sizes/font_size = 14
+theme_override_font_sizes/font_size = 7
+max_lines_visible = 2
 text = ""
 
 [node name="LblMensaje" type="Label" parent="HUD/PanelIzq/Col"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_font_sizes/font_size = 16
+theme_override_font_sizes/font_size = 8
 autowrap_mode = 3
 text = "Tira los 6 dados para empezar el turno."
 
 [node name="Botones" type="HBoxContainer" parent="HUD/PanelIzq/Col"]
 layout_mode = 2
-theme_override_constants/separation = 10
+theme_override_constants/separation = 5
 
 [node name="BtnTirar" type="Button" parent="HUD/PanelIzq/Col/Botones"]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(210, 46)
+custom_minimum_size = Vector2(105, 23)
 layout_mode = 2
+theme_override_font_sizes/font_size = 8
 text = "Tirar dados"
 
 [node name="BtnSeguir" type="Button" parent="HUD/PanelIzq/Col/Botones"]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(210, 46)
+custom_minimum_size = Vector2(105, 23)
 layout_mode = 2
+theme_override_font_sizes/font_size = 8
 text = "Separar seleccionados"
 
 [node name="BtnPlantar" type="Button" parent="HUD/PanelIzq/Col/Botones"]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(170, 46)
+custom_minimum_size = Vector2(85, 23)
 layout_mode = 2
+theme_override_font_sizes/font_size = 8
 text = "Plantarse"
 
 [node name="BtnNueva" type="Button" parent="HUD/PanelIzq/Col/Botones"]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(180, 46)
+custom_minimum_size = Vector2(90, 23)
 layout_mode = 2
+theme_override_font_sizes/font_size = 8
 text = "Nueva partida"
 
 [node name="PanelDer" type="PanelContainer" parent="HUD"]
@@ -211,8 +231,83 @@ offset_bottom = 200.0
 grow_horizontal = 0
 theme_override_styles/panel = SubResource("StyleBoxFlat_panel")
 
-[node name="LblMarcador" type="Label" parent="HUD/PanelDer"]
+[node name="ColMarcador" type="VBoxContainer" parent="HUD/PanelDer"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="LblMarcador" type="Label" parent="HUD/PanelDer/ColMarcador"]
 unique_name_in_owner = true
 layout_mode = 2
 theme_override_font_sizes/font_size = 16
 text = "Marcador:"
+
+[node name="BtnReset" type="Button" parent="HUD/PanelDer/ColMarcador"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 26)
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+tooltip_text = "Pone todos los marcadores en 0 y empieza una partida nueva"
+text = "Reset de Partida"
+
+[node name="PanelCamara" type="PanelContainer" parent="HUD"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -160.0
+offset_top = 16.0
+offset_right = 160.0
+offset_bottom = 60.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_panel")
+
+[node name="Fila" type="HBoxContainer" parent="HUD/PanelCamara"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="BtnCamIzq" type="Button" parent="HUD/PanelCamara/Fila"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+tooltip_text = "Girar la camara a la izquierda (flecha izquierda)"
+text = "↺"
+
+[node name="BtnCamDer" type="Button" parent="HUD/PanelCamara/Fila"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+tooltip_text = "Girar la camara a la derecha (flecha derecha)"
+text = "↻"
+
+[node name="BtnCamArriba" type="Button" parent="HUD/PanelCamara/Fila"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+tooltip_text = "Elevar la camara: ver la mesa mas desde arriba (flecha arriba)"
+text = "▲"
+
+[node name="BtnCamAbajo" type="Button" parent="HUD/PanelCamara/Fila"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+tooltip_text = "Bajar la camara: vista mas rasante (flecha abajo)"
+text = "▼"
+
+[node name="BtnCamMas" type="Button" parent="HUD/PanelCamara/Fila"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+tooltip_text = "Acercar la camara (rueda del mouse / PageUp)"
+text = "+"
+
+[node name="BtnCamMenos" type="Button" parent="HUD/PanelCamara/Fila"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+tooltip_text = "Alejar la camara (rueda del mouse / PageDown)"
+text = "−"

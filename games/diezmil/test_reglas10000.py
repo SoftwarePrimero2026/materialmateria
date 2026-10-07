@@ -7,6 +7,7 @@ Correr con:
 
 import unittest
 
+import diezmil
 from reglas10000 import (
     DADOS,
     desgloses,
@@ -226,6 +227,60 @@ class TestPropiedades(unittest.TestCase):
         for tirada in product(range(1, 7), repeat=DADOS):
             if es_escalera(list(tirada)):
                 self.assertEqual(puntaje_optimo(list(tirada)), 1500)
+
+
+class RngTruco:
+    """RNG trucho para mirar cuantos dados tira el motor de turno en total.
+
+    Devuelve los valores de `secuencia` en orden y, si se acaba, vuelve a
+    empezar. Cada valor quedo registrado en `tiradas`.
+    """
+
+    def __init__(self, secuencia):
+        self.secuencia = list(secuencia)
+        self.tiradas = []
+
+    def randint(self, a, b):
+        v = self.secuencia[len(self.tiradas) % len(self.secuencia)]
+        self.tiradas.append(v)
+        return v
+
+
+class TestFlujoDeTurno(unittest.TestCase):
+    """Regla del juego: cada turno empieza con los 6 dados."""
+
+    def test_turno_en_blanco_tira_los_6(self):
+        # [2,3,4,2,3,4] no tiene 1s ni 5s ni grupo de 3+: es blanco, el turno
+        # termina ahi mismo, asi que el unico tiro de ese turno es el inicial
+        # y debe ser de 6 dados.
+        rng = RngTruco([2, 3, 4, 2, 3, 4])
+        self.assertEqual(diezmil.jugar_turno_bot("Bot", 0, rng), 0)
+        self.assertEqual(len(rng.tiradas), DADOS)
+
+    def test_cada_turno_vuelve_a_tirar_los_6(self):
+        # Tres turnos seguidos:18 tiradas,6 por turno. Si un turno arrancara
+        # con menos, el total daria distinto.
+        rng = RngTruco([2, 3, 4, 2, 3, 4])
+        for _ in range(3):
+            diezmil.jugar_turno_bot("Bot", 0, rng)
+        self.assertEqual(len(rng.tiradas), 3 * DADOS)
+
+    def test_al_relanzar_solo_tiran_los_que_quedaron(self):
+        # 1er tiro: 5,1,2,2,3,4 -> el bot separa el 5 y el 1 (que suman 150)
+        # y quedan 4 dados en juego, sobre los que vuelve a tirar 4.
+        # Si relanzara los 6 completos, darian 12 tiradas en vez de 10.
+        rng = RngTruco([5, 1, 2, 2, 3, 4, 2, 3, 4, 2])
+        diezmil.jugar_turno_bot("Bot", 0, rng)
+        self.assertEqual(len(rng.tiradas), DADOS + 4)
+
+    def test_dados_llenos_recupera_los_6(self):
+        # 1er tiro: los 6 son5s -> se puntuan los 6, quedan 0 dados en juego
+        # y el motor recupera los 6 (otras 6 tiradas) antes de decidir.
+        # Con total 9900 el bot se planta apenas recupera, para que el turno
+        # dure exactamente esos 12 tiradas.
+        rng = RngTruco([5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5])
+        diezmil.jugar_turno_bot("Bot", 9900, rng)
+        self.assertEqual(len(rng.tiradas), 2 * DADOS)
 
 
 if __name__ == "__main__":

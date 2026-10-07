@@ -10,7 +10,7 @@ config_version=5
 
 config/name="DiezMil (10.000)"
 config/description="Juego de dados 10.000 — material de clase de IntroProgramacion"
-run/main_scene="res://scenes/Main.tscn"
+run/main_scene="res://scenes/Main3D.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 

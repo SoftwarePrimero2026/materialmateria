@@ -102,7 +102,7 @@ games/diezmil/
 ├── ejecutar.bat            Lanzador para Windows (descarga Godot si falta)
 ├── diezmil.md              Reglas del juego (documento original de clase)
 ├── reglas10000.py          Motor de reglas en Python (sin interfaz)
-├── test_reglas10000.py     45 tests del motor Python
+├── test_reglas10000.py     49 tests del motor Python y del turno
 ├── diezmil.py              Juego por consola (humano y bots)
 ├── diezmil_original.py.bak Versión original de clase (con los bugs, para comparar)
 ├── generar_fixtures.py     Genera el JSON de 46.656 tiradas para el test de paridad
@@ -130,7 +130,9 @@ games/diezmil/
         ├── test_paridad.gd        Paridad GDScript <-> Python
         ├── test_partida.gd        300 partidas completas headless
         ├── test_e2e_ui.gd         Clics reales sobre la interfaz
-        └── CapturaRunner.tscn     Saca una captura de pantalla
+        ├── test_camara.gd         Camara orbital, arrastre vs clic, panel 50%
+        ├── CapturaRunner.tscn     Saca una captura de pantalla
+        └── CamaraRunner.tscn      Corre test_camara.gd
 ```
 
 ---
@@ -158,6 +160,9 @@ games/diezmil/
    los dados que no sumaron.
 4. Si se puntúa con los 6 dados, se recuperan los 6 y se sigue acumulando.
 5. Si al relanzar **ningún** dado puntúa: **blanco**, se pierde todo lo de la ronda.
+6. Al **plantarse** (o al caer en blanco) el turno pasa y el jugador siguiente
+   **recibe todos los dados y los vuelve a tirar**: los dados que se habían
+   separado vuelven a la mesa, siempre se arranca con los 6.
 
 ### Decisiones sobre puntos ambiguos
 
@@ -212,10 +217,56 @@ chmod +x Godot_v4.7.2-stable_linux.x86_64
 ### Controles del juego
 
 - **Clic en un dado**: seleccionarlo o deseleccionarlo (se resalta en amarillo).
+  El clic se evalúa al **soltar** el botón, así que un arrastre de cámara no
+  termina seleccionando dados por error.
 - **Separar seleccionados**: confirma los dados elegidos y suma sus puntos.
 - **Volver a tirar (N dados)**: relanza solo los dados que quedan en mesa.
 - **Plantarse**: suma los puntos de la ronda al total y pasa el turno.
 - **Nueva partida**: al terminar, reinicia el marcador.
+- **Reset de Partida** (panel del marcador, arriba a la derecha): sirve **en
+  cualquier momento**, no solo al final. Pone todos los marcadores en 0 y
+  arranca una partida nueva. Pide **confirmación en dos clics**: el primero
+  cambia el botón a "¿Seguro?" y, si nadie confirma en 3 segundos, el reset
+  se cancela solo y el botón vuelve a su texto. Al terminar la partida el
+  botón se esconde, porque ahí ya está **Nueva partida**, que hace lo mismo.
+
+### Control de la cámara (escena 3D)
+
+La cámara es **orbital**: gira alrededor del centro de la mesa, así que se
+pueden ver los dados que quedan tapados por el borde del contenedor o por el
+panel de información.
+
+| Control | Acción |
+|---|---|
+| **Arrastrar con el mouse** | Orbitar (el movimiento sigue al mouse) |
+| **Rueda del mouse** | Acercar / alejar |
+| **← →** o **A / D** | Girar a izquierda / derecha |
+| **↑ ↓** o **W / S** | Elevar / bajar la cámara (vista cenital ↔ rasante) |
+| **PageUp / PageDown** o **+ / −** | Acercar / alejar |
+| **Barra de botones** ↺ ↻ ▲ ▼ + − (arriba, al centro) | Igual que el teclado; actúan mientras se mantienen apretados y tienen tooltip |
+
+Límites: inclinación entre 10° y 80° (nunca se da vuelta), distancia entre 5
+y 15 unidades. Los clics sobre los botones del HUD no llegan a la escena 3D,
+así que no seleccionan dados por accidente.
+
+### Panel de información
+
+El panel inferior izquierdo (turno, puntos, lectura y botones) está **reducido
+a la mitad**: 616×242 → **308×121 px**, con las tipografías a la mitad
+(22→11, 20→10, 16→8, 14→7). Para que no vuelva a crecer con el contenido se
+muestra **solo la mejor lectura** de la tirada (la que manda por regla: ante
+varias lecturas posibles vale la de mayor puntaje) y el rótulo está limitado
+a 2 líneas.
+
+### Red de seguridad antiescapamiento
+
+Al nacer, dos dados consecutivos quedan a 1,10 de distancia con una rotación
+aleatoria: si la rotación los hace solaparse, el solver los expulsa con
+fuerza y alguno puede atravesar la pared o el piso y quedar **cayendo para
+siempre** (la partida se quedaría colgada esperando que se detenga).
+`juego3d.gd` revisa en cada frame si un dado se fue de los límites de la mesa
+y, si es así, lo devuelve a su lugar con velocidad cero (avisando con un
+`push_warning` en la consola).
 
 ---
 
@@ -241,10 +292,14 @@ GODOT_BIN=/ruta/a/godot ./correr_tests.sh
 
 | Suite | Cobertura |
 |---|---|
-| `test_reglas10000.py` | 45 tests: individuales, tríos, escalera, blancos, selecciones y **las 46.656 tiradas** |
+| `test_reglas10000.py` | 49 tests: individuales, tríos, escalera, blancos, selecciones, **las 46.656 tiradas** y el **flujo del turno** (cada turno arranca con los 6 dados; al relanzar solo tiran los que quedaron) |
 | `test_paridad.gd` | Que el motor GDScript devuelva **el mismo puntaje que el de Python** en las 46.656 tiradas |
 | `test_partida.gd` | 300 partidas completas, blancos, dados llenos, entrada mínima |
-| `test_e2e_ui.gd` | Clics reales sobre botones y dados: turno completo, cambio de turno, partida hasta el ganador |
+| `test_dado3d.gd` | Modelo, colisión y detección de cara del dado 3D |
+| `test_resaltado.gd` | Que al seleccionar un dado sus pipas se encienden sin teñir los otros |
+| `test_juego3d.gd` | Escena 3D completa: tirar, separar, plantar, partida entera, **que todo turno arranque con los 6 dados** y el **reset de partida** (confirmación en dos clics) |
+| `test_e2e_ui.gd` | Clics reales sobre botones y dados: turno completo, cambio de turno (con los 6 dados), partida hasta el ganador y el **reset de partida** |
+| `test_camara.gd` | Órbita, límites de inclinación/distancia, zoom, botones de la barra, **arrastre vs clic**, panel a 308×121 y la red de seguridad antiescapamiento |
 
 La paridad se verifica con un fixture generado por Python:
 
