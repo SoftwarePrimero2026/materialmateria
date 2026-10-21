@@ -1,0 +1,209 @@
+{
+  "titulo": "NEÓN 84 — Capítulo 1: La Flota Carmesí",
+  "entrada": "INTRO_01",
+  "nodos": {
+    "INTRO_01": {
+      "spk": "CONTROL",
+      "lineas": [
+        "Nave 84, me escuchás. La flota carmesí cruzó el perímetro.",
+        "Tenés dos minutos antes de que lleguen a la ciudad."
+      ],
+      "opciones": [
+        {
+          "txt": "Bajar a la ciudad y advertir a la gente",
+          "cond": null,
+          "efecto": "advertir = true",
+          "goto": "INTRO_ADVERTIR"
+        },
+        {
+          "txt": "Subir directo al puesto de tiro",
+          "cond": null,
+          "efecto": "directo = true",
+          "goto": "INTRO_PUESTO"
+        }
+      ]
+    },
+    "INTRO_ADVERTIR": {
+      "spk": "Nave 84",
+      "lineas": ["Bajo un minuto. Que se metan en los refugios."],
+      "opciones": [],
+      "goto": "INTRO_CIERRE"
+    },
+    "INTRO_PUESTO": {
+      "spk": "Nave 84",
+      "lineas": ["Sin rodeos. Si caigo yo, que no caiga nadie más."],
+      "opciones": [],
+      "goto": "INTRO_CIERRE"
+    },
+    "INTRO_CIERRE": {
+      "spk": "CONTROL",
+      "lineas": ["Los cañones están listos.", "Empezá a disparar. Suerte, 84."],
+      "opciones": [],
+      "notas_direccion": "corte directo a la primera oleada"
+    },
+    "ENTRE_01": {
+      "spk": "MANDO ENEMIGO",
+      "lineas": [
+        "Nave 84, te ofrecemos rendición.",
+        "Tu ciudad sigue en pie… por ahora."
+      ],
+      "opciones": [
+        {
+          "txt": "Aceptar la tregua y negociar",
+          "cond": null,
+          "efecto": "rendida = true",
+          "goto": "ENTRE_01_TREGUA"
+        },
+        {
+          "txt": "Responder con una ráfaga",
+          "cond": null,
+          "efecto": "resistencia = true",
+          "goto": "ENTRE_01_FUEGO"
+        }
+      ]
+    },
+    "ENTRE_01_TREGUA": {
+      "spk": "Nave 84",
+      "lineas": ["Hablamos… pero si un solo misil baja, no hay acuerdo."],
+      "opciones": [],
+      "goto": ""
+    },
+    "ENTRE_01_FUEGO": {
+      "spk": "Nave 84",
+      "lineas": ["Mi respuesta sale por la boca del cañón."],
+      "opciones": [],
+      "goto": ""
+    },
+    "ENTRE_02": {
+      "spk": "CONTROL",
+      "lineas": [
+        "La flota se agrupó sobre el reactor viejo.",
+        "Podés sobrecargarlo… o cubrir la retirada. Vos decidís."
+      ],
+      "opciones": [
+        {
+          "txt": "Sobrecargar el reactor sobre la flota",
+          "cond": null,
+          "efecto": "sacrificio = true",
+          "goto": "ENTRE_02_A"
+        },
+        {
+          "txt": "Cobrar la retirada de la ciudad",
+          "cond": null,
+          "efecto": "retirada = true",
+          "goto": "ENTRE_02_B"
+        },
+        {
+          "txt": "Encender el faro: el Protocolo Última Luz",
+          "cond": "advertir",
+          "efecto": "ultima_luz = true",
+          "goto": "ENTRE_02_C"
+        }
+      ],
+      "notas_direccion": "la tercera opción sólo aparece si el jugador advirtió a la ciudad"
+    },
+    "ENTRE_02_A": {
+      "spk": "CONTROL",
+      "lineas": ["Reactor en línea. Que la luz te encuentre despierto, 84."],
+      "opciones": [],
+      "goto": ""
+    },
+    "ENTRE_02_B": {
+      "spk": "CONTROL",
+      "lineas": ["Última formación en retirada. Nos vemos del otro lado."],
+      "opciones": [],
+      "goto": ""
+    },
+    "ENTRE_02_C": {
+      "spk": "CONTROL",
+      "lineas": [
+        "El faro de la punta prendió. Los barcos viejos responden al llamado.",
+        "No es un rescate: es una trampa con memoria."
+      ],
+      "opciones": [],
+      "goto": ""
+    },
+    "EPILOGO": {
+      "spk": "CONTROL",
+      "lineas": [
+        "La flota se disuelve en el cielo.",
+        "Contame cómo cerró esto, 84."
+      ],
+      "opciones": [
+        {
+          "txt": "El reactor borró la flota y la ciudad con ella",
+          "cond": "sacrificio",
+          "efecto": null,
+          "goto": "FIN_SACRIFICIO"
+        },
+        {
+          "txt": "El faro guió a los barcos viejos hasta acá",
+          "cond": "ultima_luz",
+          "efecto": null,
+          "goto": "FIN_ULTIMA_LUZ"
+        },
+        {
+          "txt": "Volvimos a casa con la ciudad intacta",
+          "cond": "retirada",
+          "efecto": null,
+          "goto": "FIN_RETIRADA"
+        },
+        {
+          "txt": "Firmamos la paz que nadie quiso firmar",
+          "cond": "rendida",
+          "efecto": null,
+          "goto": "FIN_TREGUA"
+        }
+      ],
+      "notas_direccion": "convergencia: un solo nodo final que elige el cierre según las banderas"
+    },
+    "FIN_SACRIFICIO": {
+      "spk": "",
+      "lineas": [
+        "FIN: EL PRECIO DE LA LUZ",
+        "La flota no llegó a la ciudad… porque ya no había ciudad que defender.",
+        "El silencio después del flash es lo único que queda de NEÓN 84."
+      ],
+      "opciones": [],
+      "fin": true,
+      "titulo": "FIN: EL PRECIO DE LA LUZ",
+      "mensaje": "Ganaste, pero el reactor borró la ciudad."
+    },
+    "FIN_ULTIMA_LUZ": {
+      "spk": "",
+      "lineas": [
+        "FIN: ÚLTIMA LUZ",
+        "El faro que vos encendiste guió a los barcos de rescate… y a la flota al mismo tiempo.",
+        "Nadie sabe si fue suerte o fue plan: vos lo decidiste abajo, antes del primer disparo."
+      ],
+      "opciones": [],
+      "fin": true,
+      "titulo": "FIN: ÚLTIMA LUZ",
+      "mensaje": "Tu decisión del primer minuto definió el final."
+    },
+    "FIN_RETIRADA": {
+      "spk": "",
+      "lineas": [
+        "FIN: LA CIUDAD EN PIE",
+        "Salimos con la gente a cuesta y la flota detrás.",
+        "Hay noches que se ganan sin disparar ni una bala."
+      ],
+      "opciones": [],
+      "fin": true,
+      "titulo": "FIN: LA CIUDAD EN PIE",
+      "mensaje": "Retirada ordenada: la ciudad sobrevivió."
+    },
+    "FIN_TREGUA": {
+      "spk": "",
+      "lineas": [
+        "FIN: TREGUA",
+        "Firmamos en el borde del sistema, con los cañones todavía calientes.",
+        "Que dure lo que dure, nadie murió esta noche."
+      ],
+      "opciones": [],
+      "fin": true,
+      "titulo": "FIN: TREGUA",
+      "mensaje": "Elegiste hablar antes que disparar."
+    }
+  }
+}

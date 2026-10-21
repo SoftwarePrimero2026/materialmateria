@@ -1,0 +1,27 @@
+; Engine configuration file.
+; Proyecto: NEÓN 84 — template del TP "Juego Arcade con Guion" (IntroProgramacion)
+;
+; Abrir con: godot --path template --editor
+; Correr:    godot --path template
+
+config_version=5
+
+[application]
+
+config/name="NEÓN 84 — Arcade con Guion (TP)"
+config/description="Template del TP de Introducción a la Programación: juego arcade con guion narrativo en Godot 4"
+run/main_scene="res://escenas/Main.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=480
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
