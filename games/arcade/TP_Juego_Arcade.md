@@ -51,18 +51,18 @@ decisión), no sólo matar enemigos.
 Defensa de la ciudad contra una flota de invasores. Nave vertical, oleadas
 crecientes, vidas y récord.
 
-| Elemento       | Regla                                                                         |
-| -------------- | ----------------------------------------------------------------------------- |
-| **Objetivo**   | Sobrevivir a 3 oleadas de invasores y llegar al epílogo del guion             |
-| **Movimiento** | ← → para mover la nave (no puede salirse de la pantalla)                      |
-| **Disparo**    | ENTER o ESPACIO; con enfriamiento (no es ametralladora infinita)              |
-| **Oleadas**    | 3 oleadas: más filas, pasos más largos y menos espera entre pasos             |
-| **Formación**  | Los invasores marchan en bloque: rebotan en los bordes y bajan un renglón     |
-| **Puntaje**    | Cada fila vale distinto: cuanto más arriba nació el invasor, más puntos       |
-| **Vidas**      | 3; al ser alcanzado perdés una y la nave reaparece                            |
-| **Derrota**    | Vidas en 0 **o** la formación llega al fondo de la pantalla                   |
+| Elemento             | Regla                                                                              |
+| -------------------- | ---------------------------------------------------------------------------------- |
+| **Objetivo**   | Sobrevivir a 3 oleadas de invasores y llegar al epílogo del guion                 |
+| **Movimiento** | ← → para mover la nave (no puede salirse de la pantalla)                         |
+| **Disparo**    | ENTER o ESPACIO; con enfriamiento (no es ametralladora infinita)                   |
+| **Oleadas**    | 3 oleadas: más filas, pasos más largos y menos espera entre pasos                |
+| **Formación** | Los invasores marchan en bloque: rebotan en los bordes y bajan un renglón         |
+| **Puntaje**    | Cada fila vale distinto: cuanto más arriba nació el invasor, más puntos         |
+| **Vidas**      | 3; al ser alcanzado perdés una y la nave reaparece                                |
+| **Derrota**    | Vidas en 0 **o** la formación llega al fondo de la pantalla                 |
 | **Victoria**   | Superada la oleada 3 → nodo `EPILOGO` → uno de los finales según tus banderas |
-| **Récord**     | Se guarda entre partidas (`user://puntajes.cfg`)                              |
+| **Récord**    | Se guarda entre partidas (`user://puntajes.cfg`)                                 |
 
 ---
 
@@ -83,16 +83,16 @@ godot --headless --path . --script res://tests/recorrer_juego.gd
 # salida esperada: OK: recorrido completo — 9 nodos de guion, 3 oleadas, ... fase FINAL
 ```
 
-| Archivo                                                  | Rol                                  | Estado                     |
-| -------------------------------------------------------- | ------------------------------------ | -------------------------- |
-| `escenas/Main.tscn`                                      | orquestador: formación, HUD, diálogo | armado                     |
-| `escenas/Jugador.tscn` / `Enemigo.tscn` / `Disparo.tscn` | nave, invasor, bala                  | armados                    |
-| `scripts/main.gd`                                        | oleadas, puntaje, vidas, finales     | casi completo (1 TODO)     |
-| `scripts/jugador.gd`                                     | movimiento, disparo, daño            | casi completo (1 TODO)     |
-| `scripts/enemigo.gd`                                     | colisiones y destrucción             | casi completo (1 TODO)     |
-| `scripts/guion_manager.gd`                               | JSON → máquina de estados → banderas | completo (extensión TODO)  |
-| `scripts/dialogo_ui.gd`                                  | pinta nodos, líneas y opciones       | completo (1 TODO opcional) |
-| `guion/capitulo_1.json`                                  | **guion de ejemplo**                 | a reemplazar por el tuyo   |
+| Archivo                                                        | Rol                                     | Estado                     |
+| -------------------------------------------------------------- | --------------------------------------- | -------------------------- |
+| `escenas/Main.tscn`                                          | orquestador: formación, HUD, diálogo  | armado                     |
+| `escenas/Jugador.tscn` / `Enemigo.tscn` / `Disparo.tscn` | nave, invasor, bala                     | armados                    |
+| `scripts/main.gd`                                            | oleadas, puntaje, vidas, finales        | casi completo (1 TODO)     |
+| `scripts/jugador.gd`                                         | movimiento, disparo, daño              | casi completo (1 TODO)     |
+| `scripts/enemigo.gd`                                         | colisiones y destrucción               | casi completo (1 TODO)     |
+| `scripts/guion_manager.gd`                                   | JSON → máquina de estados → banderas | completo (extensión TODO) |
+| `scripts/dialogo_ui.gd`                                      | pinta nodos, líneas y opciones         | completo (1 TODO opcional) |
+| `guion/capitulo_1.json`                                      | **guion de ejemplo**              | a reemplazar por el tuyo   |
 
 **Lo que ya funciona** (leelo con calma, es tu material de estudio): oleadas,
 HUD, récord, guion con condiciones y finales, diálogo que pausa el juego, y
@@ -110,13 +110,13 @@ Documento de **1 a 2 páginas** con seis bloques cortos. Se cierra **antes**
 de tocar el guion JSON (regla de la guía: escribir sin estructura es la causa
 nº 1 de guiones que se rehacen completos).
 
-| Paso             | Qué tenés que entregar                                                                                                                               | Mínimo exigido                                          |
-| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
-| 1 · Premisa      | Logline (2 frases: protagonista, objetivo, obstáculo, apuesta) + promesa al jugador + 2 referencias                                                  | 2 frases, sin adjetivos vacíos                          |
-| 2 · Tema         | Tema como **oración discutible** + pregunta dramática                                                                                                | tiene que poder jugarse, no sólo contarse               |
-| 3 · Mundo        | Biblia breve: reglas del mundo (¿por qué hay flotas y faros?), 5 entradas de glosario                                                                | reglas que no contradigan el arcade                     |
-| 4 · Personajes   | 2 fichas: deseo, necesidad, arco, voz, antagonismo                                                                                                   | al menos uno fuera de pantalla (el mando enemigo sirve) |
-| 5 · Estructura   | **Beat sheet de 7 filas** con % de avance: qué pasa en pantalla en cada beat                                                                         | los beats se mapean a las 3 oleadas + intro + epílogo   |
+| Paso               | Qué tenés que entregar                                                                                                                                      | Mínimo exigido                                         |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| 1 · Premisa       | Logline (2 frases: protagonista, objetivo, obstáculo, apuesta) + promesa al jugador + 2 referencias                                                          | 2 frases, sin adjetivos vacíos                         |
+| 2 · Tema          | Tema como **oración discutible** + pregunta dramática                                                                                                 | tiene que poder jugarse, no sólo contarse              |
+| 3 · Mundo         | Biblia breve: reglas del mundo (¿por qué hay flotas y faros?), 5 entradas de glosario                                                                       | reglas que no contradigan el arcade                     |
+| 4 · Personajes    | 2 fichas: deseo, necesidad, arco, voz, antagonismo                                                                                                            | al menos uno fuera de pantalla (el mando enemigo sirve) |
+| 5 · Estructura    | **Beat sheet de 7 filas** con % de avance: qué pasa en pantalla en cada beat                                                                           | los beats se mapean a las 3 oleadas + intro + epílogo  |
 | 6 · Ramificación | **Grafo Y con convergencia**: 2 decisiones que se juntan + nodos de final; anotar qué bandera cambia cada opción y cuánto contenido agrega cada rama | 1 convergencia visible, costo estimado por rama         |
 
 **Check de la premisa antes de entregar:** ¿se explica sin usar la palabra
@@ -129,14 +129,14 @@ Reescribí el guion de ejemplo con **tu historia**, respetando los campos
 mínimos de la guía (`spk`, `lineas`, `opciones`, `cond`, `efecto`, `goto`,
 `fin`, `notas_direccion`).
 
-| Requisito                           | Mínimo                                                              |
-| ----------------------------------- | ------------------------------------------------------------------- |
-| Nodos totales                       | **8 o más** (además de los finales)                                 |
-| Decisiones del jugador              | **2 o más**, cada una con `cond` y `efecto` explícitos              |
-| Opción con condición de visibilidad | **1 o más** (sólo aparece si se cumple una bandera)                 |
-| Finales                             | **3**, todos alcanzables desde el epílogo                           |
-| Convergencia                        | obligatoria: las ramas de las decisiones se juntan antes del clímax |
-| Efectos                             | toda elección cambia **algo medible**: bandera o contador           |
+| Requisito                             | Mínimo                                                              |
+| ------------------------------------- | -------------------------------------------------------------------- |
+| Nodos totales                         | **8 o más** (además de los finales)                          |
+| Decisiones del jugador                | **2 o más**, cada una con `cond` y `efecto` explícitos   |
+| Opción con condición de visibilidad | **1 o más** (sólo aparece si se cumple una bandera)          |
+| Finales                               | **3**, todos alcanzables desde el epílogo                     |
+| Convergencia                          | obligatoria: las ramas de las decisiones se juntan antes del clímax |
+| Efectos                               | toda elección cambia **algo medible**: bandera o contador     |
 
 Reglas duras (de la guía):
 
@@ -150,13 +150,13 @@ Reglas duras (de la guía):
 
 Traducción motor ↔ guion (tabla de la clase, aplicada al template):
 
-| Guion           | Godot / GDScript                                           |
-| --------------- | ---------------------------------------------------------- |
-| Nodo de diálogo | entrada de `nodos` en el JSON + `Dictionary`               |
+| Guion            | Godot / GDScript                                                |
+| ---------------- | --------------------------------------------------------------- |
+| Nodo de diálogo | entrada de `nodos` en el JSON + `Dictionary`                |
 | Condición       | bandera en `guion.banderas` (leída por `_cumple`)          |
-| Efecto          | actualización de `guion.banderas` (escrita por `_aplicar`) |
-| Salto `goto`    | `mostrar_nodo(destino)` / cambio de escena                 |
-| Fin del guion   | nodo con `"fin": true` → `_finalizar_partida()`            |
+| Efecto           | actualización de `guion.banderas` (escrita por `_aplicar`) |
+| Salto `goto`   | `mostrar_nodo(destino)` / cambio de escena                    |
+| Fin del guion    | nodo con `"fin": true` → `_finalizar_partida()`            |
 
 **Tareas obligatorias** (además de reescribir el JSON):
 
@@ -202,7 +202,7 @@ creciente dentro de cada oleada.
 ## 6. Estructura de la entrega
 
 ```
-tu-repo/
+tu-carpeta/
 ├── docs/
 │   ├── diseno_narrativo.md      # E1 (premisa, tema, mundo, personajes, beats, grafo)
 │   └── playtest.md              # E4 (checklist + reporte)
@@ -226,24 +226,24 @@ Reglas:
 
 ## 7. Cronograma sugerido (3 clases)
 
-| Clase | Trabajo                                                                               |
-| ----- | ------------------------------------------------------------------------------------- |
-| 1     | Leer el template y el guion de ejemplo · cerrar **E1** (diseño de 1 a 6)              |
-| 2     | Escribir **E2** (JSON con tus nodos) · implementar tareas **E3** 1 a 3                |
+| Clase | Trabajo                                                                                         |
+| ----- | ----------------------------------------------------------------------------------------------- |
+| 1     | Leer el template y el guion de ejemplo · cerrar **E1** (diseño de 1 a 6)                |
+| 2     | Escribir **E2** (JSON con tus nodos) · implementar tareas **E3** 1 a 3             |
 | 3     | Mecánica narrativa (E3.4-5) · **E4** (test automático + playtest + reporte) · entrega |
 
 ---
 
 ## 8. Rúbrica (100 puntos)
 
-| Ítem                    | Puntos | Se evalúa                                                                                                         |
-| ----------------------- | ------ | ----------------------------------------------------------------------------------------------------------------- |
-| **E1** Diseño narrativo | 20     | Premisa accionable, tema discutible, beat sheet mapeado a oleadas, grafo con convergencia y costo                 |
-| **E2** Guion JSON       | 20     | ≥8 nodos, 2 decisiones con `cond`+`efecto`, 3 finales alcanzables, sin falsas ilusiónes de elección, IDs estables |
-| **E3** Implementación   | 25     | Juego corriendo sin errores, 3 tareas obligatorias, máquina de estados clara y legible                            |
-| Ludonarrativa           | 15     | Al menos una mecánica desbloqueada por una decisión del guion, coherente con el tema                              |
-| **E4** Testing          | 15     | Corrida automática en OK, checklist respondida, playtest con 3 jugadores y cambios aplicados                      |
-| Código limpio y Git     | 5      | Nombres con intención, funciones cortas, sin código muerto, commits ordenados                                     |
+| Ítem                          | Puntos | Se evalúa                                                                                                               |
+| ------------------------------ | ------ | ------------------------------------------------------------------------------------------------------------------------ |
+| **E1** Diseño narrativo | 20     | Premisa accionable, tema discutible, beat sheet mapeado a oleadas, grafo con convergencia y costo                        |
+| **E2** Guion JSON        | 20     | ≥8 nodos, 2 decisiones con `cond`+`efecto`, 3 finales alcanzables, sin falsas ilusiónes de elección, IDs estables |
+| **E3** Implementación   | 25     | Juego corriendo sin errores, 3 tareas obligatorias, máquina de estados clara y legible                                  |
+| Ludonarrativa                  | 15     | Al menos una mecánica desbloqueada por una decisión del guion, coherente con el tema                                   |
+| **E4** Testing           | 15     | Corrida automática en OK, checklist respondida, playtest con 3 jugadores y cambios aplicados                            |
+| Código limpio y Git           | 5      | Nombres con intención, funciones cortas, sin código muerto, commits ordenados                                          |
 
 **No aprobado con:** guion sin decisión real (todo lleva al mismo final), el
 juego no arranca, o entrega sin documentos de diseño.
